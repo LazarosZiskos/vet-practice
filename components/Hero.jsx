@@ -1,7 +1,13 @@
-import Image from "next/image";
 import React from "react";
 import MyButton from "./MyButton";
-import Link from "next/link";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const Hero = () => {
   return (
@@ -36,6 +42,45 @@ const Hero = () => {
               href="/contact"
             />
           </div>
+        </div>
+        {/* CREATE MYCARD COMPONENT WITH THE SHADCNUI CARD INSIDE TO PASS PROPS */}
+        <div className="absolute mt-auto justify-center items-center container grid grid-cols-3 top-[650px]">
+          <Card className="bg-gray2">
+            <CardHeader>
+              <CardTitle>Card Title</CardTitle>
+              <CardDescription>Card Description</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+              <p>Card Footer</p>
+            </CardFooter>
+          </Card>
+          <Card className="bg-blue1">
+            <CardHeader>
+              <CardTitle>Card Title</CardTitle>
+              <CardDescription>Card Description</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+              <p>Card Footer</p>
+            </CardFooter>
+          </Card>
+          <Card className="bg-gray1">
+            <CardHeader>
+              <CardTitle>Card Title</CardTitle>
+              <CardDescription>Card Description</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+              <p>Card Footer</p>
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </section>
