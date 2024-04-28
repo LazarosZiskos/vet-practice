@@ -17,6 +17,10 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        dog1: "url('/public/doctor-dog.jpg')",
+      },
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
