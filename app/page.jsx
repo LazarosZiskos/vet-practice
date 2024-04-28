@@ -1,3 +1,9 @@
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
-  return <div className="bg-gray2">hello world</div>;
+  return (
+    <main>
+      <Navbar />
+    </main>
+  );
 }
