@@ -3,6 +3,7 @@ import MyButton from "./MyButton";
 
 import MyCard from "./MyCard";
 import { BriefcaseMedical, Dog, Hospital } from "lucide-react";
+import Services from "./Services";
 
 const Hero = () => {
   return (
@@ -38,27 +39,31 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="absolute justify-center m-auto items-center container grid grid-cols-3 top-[650px] left-0 right-0 ml-auto mr-auto w-full">
-          <MyCard
-            title="Diagnostic"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-            style="bg-gray2"
-            icon={<Hospital size={36} className="text-blue1" />}
-          />
-          <MyCard
-            title="Wellness"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-            style="bg-blue1 text-white"
-            icon={<Dog size={36} className="text-white" />}
-            descStyle="text-white"
-          />
-          <MyCard
-            title="Surgery"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-            style="bg-gray1 text-white"
-            icon={<BriefcaseMedical size={36} className="text-blue1" />}
-            descStyle="text-white"
-          />
+
+        <div className="absolute md:top-[650px] left-0 right-0 ml-auto mr-auto w-full">
+          <div className=" mt-10 md:mt-0 mb-10 justify-center m-auto items-center container grid md:grid-cols-3 md:top-[650px] ">
+            <MyCard
+              title="Diagnostic"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              style="bg-gray2"
+              icon={<Hospital size={40} className="text-blue1" />}
+            />
+            <MyCard
+              title="Wellness"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              style="bg-blue1 text-white"
+              icon={<Dog size={40} className="text-white" />}
+              descStyle="text-white"
+            />
+            <MyCard
+              title="Surgery"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              style="bg-gray1 text-white"
+              icon={<BriefcaseMedical size={40} className="text-blue1" />}
+              descStyle="text-white"
+            />
+          </div>
+          <Services />
         </div>
       </div>
     </section>
