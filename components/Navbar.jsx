@@ -15,8 +15,14 @@ const Navbar = () => {
   return (
     <header className="h-[30px] mt-5 mb-10">
       <div className="container flex items-center justify-between">
-        <div className="text-xl font-bold md:text-3xl">
-          <a href="/">LINA AKAKIADOU</a>
+        <div className="text-xl font-bold md:text-3xl mb-10">
+          <a href="/">
+            <img
+              src="main_logo.jpg"
+              alt="logo"
+              className="w-[150px] h-full"
+            ></img>
+          </a>
         </div>
         <div className="md:flex space-x-10 hidden">
           {navLinks.map((link, index) => (

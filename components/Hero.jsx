@@ -8,13 +8,13 @@ import Services from "./Services";
 const Hero = () => {
   return (
     <section>
-      <div className="">
+      <div className="top-[20px]">
         <img
-          className="w-full h-[70vh] object-cover"
+          className="w-full h-[70vh] object-cover pt-12"
           src="dog1.jpg"
           alt="dog-1"
         />
-        <div className="bg-black/40 absolute top-[90px] w-full h-[70vh]" />
+        <div className="bg-black/40 absolute top-[138px] w-full h-[64.5vh]" />
         <div className="absolute justify-center items-center flex flex-col top-[90px] w-full h-[70vh]">
           <div className="container">
             <h1
