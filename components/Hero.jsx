@@ -1,20 +1,15 @@
 import React from "react";
 import MyButton from "./MyButton";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
+import MyCard from "./MyCard";
+import { BriefcaseMedical, Dog, Hospital } from "lucide-react";
 
 const Hero = () => {
   return (
     <section>
       <div className="">
         <img
-          className="w-full h-[70vh] object-fit"
+          className="w-full h-[70vh] object-cover"
           src="dog1.jpg"
           alt="dog-1"
         />
@@ -43,44 +38,27 @@ const Hero = () => {
             />
           </div>
         </div>
-        {/* CREATE MYCARD COMPONENT WITH THE SHADCNUI CARD INSIDE TO PASS PROPS */}
-        <div className="absolute mt-auto justify-center items-center container grid grid-cols-3 top-[650px]">
-          <Card className="bg-gray2">
-            <CardHeader>
-              <CardTitle>Card Title</CardTitle>
-              <CardDescription>Card Description</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-              <p>Card Footer</p>
-            </CardFooter>
-          </Card>
-          <Card className="bg-blue1">
-            <CardHeader>
-              <CardTitle>Card Title</CardTitle>
-              <CardDescription>Card Description</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-              <p>Card Footer</p>
-            </CardFooter>
-          </Card>
-          <Card className="bg-gray1">
-            <CardHeader>
-              <CardTitle>Card Title</CardTitle>
-              <CardDescription>Card Description</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-              <p>Card Footer</p>
-            </CardFooter>
-          </Card>
+        <div className="absolute justify-center m-auto items-center container grid grid-cols-3 top-[650px] left-0 right-0 ml-auto mr-auto w-full">
+          <MyCard
+            title="Diagnostic"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            style="bg-gray2"
+            icon={<Hospital size={36} className="text-blue1" />}
+          />
+          <MyCard
+            title="Wellness"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            style="bg-blue1 text-white"
+            icon={<Dog size={36} className="text-white" />}
+            descStyle="text-white"
+          />
+          <MyCard
+            title="Surgery"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            style="bg-gray1 text-white"
+            icon={<BriefcaseMedical size={36} className="text-blue1" />}
+            descStyle="text-white"
+          />
         </div>
       </div>
     </section>
