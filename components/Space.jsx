@@ -61,6 +61,7 @@ const Space = () => {
                 />
               </CarouselItem>
             </CarouselContent>
+
             <CarouselPrevious className="hover:text-blue1 transition-all ease-in-out duration-200" />
             <CarouselNext className="hover:text-blue1 transition-all ease-in-out duration-200" />
           </Carousel>

@@ -29,7 +29,7 @@ const Doctor = () => {
           <MyButton
             title="Keep Reading"
             href="/"
-            style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1 mr-5"
+            style="flex items-center gap-2 text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1 mr-5"
             icon={<ArrowRight />}
           ></MyButton>
         </div>
