@@ -13,7 +13,7 @@ import { MenuIcon } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <header className="h-[30px] mt-5 mb-10">
+    <header className="h-[50px] mt-5 mb-10">
       <div className="container flex items-center justify-between">
         <div className="text-xl font-bold md:text-3xl mb-10">
           <a href="/">

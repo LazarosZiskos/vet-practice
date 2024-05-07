@@ -14,8 +14,8 @@ const Hero = () => {
           src="dog1.jpg"
           alt="dog-1"
         />
-        <div className="bg-black/40 absolute top-[138px] w-full h-[64.5vh]" />
-        <div className="absolute justify-center items-center flex flex-col top-[90px] w-full h-[70vh]">
+        <div className="bg-black/40 absolute top-[157px] w-full h-[64.4vh]" />
+        <div className="absolute justify-center items-center flex flex-col top-[120px] w-full h-[70vh]">
           <div className="container">
             <h1
               className="text-white font-bold leading-0.5 text-4xl tracking-wider pb-4 max-w-[300px]
@@ -63,7 +63,6 @@ const Hero = () => {
               descStyle="text-white"
             />
           </div>
-          <Services />
         </div>
       </div>
     </section>

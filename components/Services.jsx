@@ -1,17 +1,10 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import { Card, CardDescription, CardFooter, CardTitle } from "./ui/card";
 import MyButton from "./MyButton";
 
 const Services = () => {
   return (
-    <div className="bg-gray2 pb-20">
+    <div className="bg-gray2 pb-20 mt-[900px] md:mt-[300px] lg:mt-[250px]">
       <div className="container">
         <div className="pt-20 items-center justify-center flex flex-col">
           <h1 className="font-bold text-2xl pb-4 tracking-wider">
