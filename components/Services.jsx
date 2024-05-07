@@ -7,7 +7,7 @@ const Services = () => {
     <div className="bg-gray2 pb-20 mt-[900px] md:mt-[300px] lg:mt-[250px]">
       <div className="container">
         <div className="pt-20 items-center justify-center flex flex-col">
-          <h1 className="font-bold text-2xl pb-4 tracking-wider">
+          <h1 className="font-bold text-2xl lg:text-4xl pb-4 tracking-wider">
             VETERINARY SERVICES
           </h1>
           <p className="text-center max-w-[550px] text-slate-400 text-sm leading-6">
