@@ -9,7 +9,7 @@ const Testimonials = () => {
       <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">
         ΑΞΙΟΛΟΓΗΣΕΙΣ
       </h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-20">
+      <div className="flex flex-col items-center justify-center md:flex-row flex-wrap gap-4 mt-20">
         {reviews.map((review, idx) => (
           <div key={idx}>
             <TestimonialCard
