@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="absolute justify-center items-center flex flex-col top-[120px] w-full h-[70vh]">
           <div className="container">
             <h1
-              className="text-white font-bold leading-3 text-4xl tracking-wider pb-4 max-w-[300px]
+              className="text-white font-bold leading-1 text-4xl tracking-wider pb-4 max-w-[300px]
             md:text-5xl md:max-w-[500px] md:pb-10"
             >
               Κτηνιατρείο <br />

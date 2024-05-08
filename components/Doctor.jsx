@@ -6,7 +6,7 @@ const Doctor = () => {
   return (
     <section className="container mt-20 mb-20">
       <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">
-        Η ΓΙΑΤΡΟΣ
+        Η ΚΤΗΝΙΑΤΡΟΣ
       </h1>
       <div className="flex flex-col md:flex-row justify-between w-full gap-4">
         <div className="md:w-1/2 flex items-center justify-end mb-4">
@@ -18,13 +18,10 @@ const Doctor = () => {
         </div>
         <div className="flex flex-col justify-around md:w-1/2">
           <p className="max-w-[550px] leading-2 pb-10">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
-            impedit quaerat accusantium odit obcaecati voluptates recusandae,
-            inventore, odio, accusamus perferendis nisi. Nulla ratione maiores
-            exercitationem aspernatur autem eligendi laboriosam aperiam! Enim
-            quis quisquam quae rem reprehenderit mollitia eveniet quaerat ipsa
-            ullam consequatur facere pariatur a, molestias id nam? Aut hic
-            aperiam excepturi.
+            Η έμπειρη κτηνίατρος Λίνα Ακακιάδου είναι απόφοιτη του Αριστοτελείου
+            Πανεπιστημίου Θεσσαλονίκης. Με δεκαετή εμπειρία στην κτηνιατρική
+            επιστήμη. Επίσης είναι κάτοχος Μεταπτυχιακού Διπλώματος στην
+            Τεχνολογία Τροφίμων...
           </p>
           <MyButton
             title="Συνεχίστε την Ανάγνωση"

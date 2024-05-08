@@ -17,9 +17,9 @@ const Space = () => {
             Ο ΧΩΡΟΣ
           </h1>
           <p className="text-center text-slate-400 leading-6 max-w-[700px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-            eius sapiente! Asperiores iste molestias inventore deleniti quae
-            ipsa officiis laboriosam dolores ad voluptate.
+            Το κτηνιατρείο βρίσκεται επί της κεντρικής οδού της Νέας Καρβάλης,
+            Καβάλας. Πρόκειται για ένα πλήρως εξοπλισμένο και καλαίσθητο
+            κτηνιατρείο.
           </p>
         </div>
         <div className="pt-10 pb-10 pl-5 pr-5">

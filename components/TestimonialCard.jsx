@@ -12,7 +12,7 @@ import { StarIcon } from "lucide-react";
 const TestimonialCard = ({ title, description, name, writer, town }) => {
   return (
     <div>
-      <Card className="w-[350px] md:w-[400px] h-[400px] border-2 border-gray2 flex flex-col items-center justify-center shadow-md">
+      <Card className="w-[320px] md:w-[400px] h-[400px] border-2 border-gray2 flex flex-col items-center justify-center shadow-md">
         <CardHeader className="flex flex-col items-center justify-center gap-2">
           <Avatar>
             <AvatarFallback>{name}</AvatarFallback>
@@ -26,7 +26,7 @@ const TestimonialCard = ({ title, description, name, writer, town }) => {
             <StarIcon className="text-blue1 pr-1" />
           </CardTitle>
         </CardHeader>
-        <CardDescription className="text-center w-[320px]">
+        <CardDescription className="text-center w-[300px]">
           {description}
         </CardDescription>
 

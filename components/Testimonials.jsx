@@ -5,7 +5,7 @@ import { reviews } from "@/constants";
 
 const Testimonials = () => {
   return (
-    <section className="pt-20 pb-10 container">
+    <section className="pt-20 pb-10 container items-center">
       <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">
         ΑΞΙΟΛΟΓΗΣΕΙΣ
       </h1>

@@ -12,7 +12,7 @@ const Questions = () => {
       <div className="container">
         <div className="mb-4">
           <h1 className="font-bold text-center text-2xl lg:text-4xl pb-4 tracking-wider">
-            Συχνες ερωτησεις
+            ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ
           </h1>
         </div>
         <Accordion type="single" collapsible className="w-full">
