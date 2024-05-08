@@ -9,6 +9,15 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
 import { MenuIcon } from "lucide-react";
 
 const Navbar = () => {
@@ -36,26 +45,23 @@ const Navbar = () => {
           ))}
         </div>
         <div className="md:hidden">
-          <DropdownMenu>
-            <DropdownMenuTrigger>
+          <Sheet>
+            <SheetTrigger>
               <MenuIcon />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
+            </SheetTrigger>
+            <SheetContent className="flex flex-col items-center justify-center">
               {navLinks.map((link, index) => (
-                <DropdownMenuItem
-                  key={index}
-                  className="pb-5 items-center justify-center"
-                >
+                <div key={index} className="pb-5 items-center justify-center">
                   <Link
                     href={link.href}
                     className="font-semibold uppercase transition-all ease-in-out duration-100 hover:text-blue1 "
                   >
                     <h2>{link.title}</h2>
                   </Link>
-                </DropdownMenuItem>
+                </div>
               ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
