@@ -1,18 +1,18 @@
 export const navLinks = [
   {
-    title: "Home",
+    title: "Αρχική",
     href: "/",
   },
   {
-    title: "About Us",
+    title: "Σχετικά με Εμάς",
     href: "/about",
   },
   {
-    title: "Services",
+    title: "Υπηρεσίες",
     href: "/services",
   },
   {
-    title: "Contact",
+    title: "Επικοινωνία",
     href: "/contact",
   },
 ];

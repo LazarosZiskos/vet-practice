@@ -1,24 +1,8 @@
 import { navLinks } from "@/constants";
 import Link from "next/link";
 import React from "react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-
 import { MenuIcon } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const Navbar = () => {
   return (
@@ -38,7 +22,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={link.href}
-              className="font-semibold uppercase transition-all ease-in-out duration-200 hover:text-blue1 "
+              className="font-semibold transition-all ease-in-out duration-200 hover:text-blue1 "
             >
               <h2>{link.title}</h2>
             </Link>
@@ -51,7 +35,7 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent className="flex flex-col items-center justify-center">
               {navLinks.map((link, index) => (
-                <div key={index} className="pb-5 items-center justify-center">
+                <div key={index} className="pb-5">
                   <Link
                     href={link.href}
                     className="font-semibold uppercase transition-all ease-in-out duration-100 hover:text-blue1 "

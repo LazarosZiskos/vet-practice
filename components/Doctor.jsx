@@ -6,7 +6,7 @@ const Doctor = () => {
   return (
     <section className="container mt-20 mb-20">
       <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">
-        THE DOCTOR
+        Η ΓΙΑΤΡΟΣ
       </h1>
       <div className="flex flex-col md:flex-row justify-between w-full gap-4">
         <div className="md:w-1/2 flex items-center justify-end mb-4">
@@ -27,7 +27,7 @@ const Doctor = () => {
             aperiam excepturi.
           </p>
           <MyButton
-            title="Keep Reading"
+            title="Συνεχίστε την Ανάγνωση"
             href="/"
             style="flex items-center gap-2 text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1 mr-5"
             icon={<ArrowRight />}

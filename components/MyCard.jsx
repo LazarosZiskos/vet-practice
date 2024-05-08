@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
+import Link from "next/link";
 
 const MyCard = ({ title, description, style, icon, descStyle }) => {
   return (
@@ -21,9 +22,11 @@ const MyCard = ({ title, description, style, icon, descStyle }) => {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <button className="uppercase font-bold text-sm hover:text-blue1 transition-all ease-in duration-150">
-            Read more
-          </button>
+          <Link href="/services">
+            <button className="font-bold text-sm hover:text-blue1 transition-all ease-in duration-150">
+              Περισσότερα
+            </button>
+          </Link>
         </CardContent>
       </Card>
     </>

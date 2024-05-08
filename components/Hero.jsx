@@ -18,21 +18,22 @@ const Hero = () => {
         <div className="absolute justify-center items-center flex flex-col top-[120px] w-full h-[70vh]">
           <div className="container">
             <h1
-              className="text-white font-bold leading-0.5 text-4xl tracking-wider pb-4 max-w-[300px]
-            md:text-6xl md:max-w-[500px] md:pb-10"
+              className="text-white font-bold leading-3 text-4xl tracking-wider pb-4 max-w-[300px]
+            md:text-5xl md:max-w-[500px] md:pb-10"
             >
-              Friendly pet care for every size
+              Κτηνιατρείο <br />
+              Λίνα Ακακιάδου
             </h1>
             <p className="text-white pb-4 font-semibold text-sm md:text-xl md:pb-10">
-              We strive to provide complete care for our patients
+              Η φροντίδα του ζώου σας, είναι προτεραιότητα μας!
             </p>
             <MyButton
-              title="Read More"
+              title="Διαβάστε Περισσότερα"
               style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1 mr-5"
-              href="/services"
+              href="/about"
             />
             <MyButton
-              title="Contact"
+              title="Επικοινωνία"
               style="text-blue1 bg-white border border-white hover:bg-transparent
                 hover:text-white"
               href="/contact"
@@ -43,21 +44,21 @@ const Hero = () => {
         <div className="absolute md:top-[650px] left-0 right-0 ml-auto mr-auto w-full">
           <div className=" mt-10 md:mt-0 mb-10 justify-center m-auto items-center container grid md:grid-cols-3 md:top-[650px] ">
             <MyCard
-              title="Diagnostic"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-              style="bg-gray2"
+              title="Διαγνωστικοί Έλεγχοι"
+              description="Διαγνωστικοί έλεγχοι για καθε ειδους περιστατικό"
+              style="bg-gray2 "
               icon={<Hospital size={40} className="text-blue1" />}
             />
             <MyCard
-              title="Wellness"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              title="Περιποίηση"
+              description="Καλωπισμός και φροντίδα του κατοικιδίου σας"
               style="bg-blue1 text-white"
               icon={<Dog size={40} className="text-white" />}
               descStyle="text-white"
             />
             <MyCard
-              title="Surgery"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+              title="Χειρουργεία"
+              description="Υπηρεσίες χειρουργείου για διάφορες περιπτώσεις"
               style="bg-gray1 text-white"
               icon={<BriefcaseMedical size={40} className="text-blue1" />}
               descStyle="text-white"
