@@ -22,7 +22,7 @@ const Space = () => {
             κτηνιατρείο.
           </p>
         </div>
-        <div className="pt-10 pb-10 pl-5 pr-5">
+        <div className="md:pb-10 md:pt-10 pl-5 pr-5">
           <Carousel>
             <CarouselContent>
               <CarouselItem>

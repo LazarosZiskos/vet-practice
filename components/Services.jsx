@@ -39,7 +39,7 @@ const Services = () => {
           <Card>
             <img src="dog1.jpg" alt="dog1" className="w-full" />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
-              Καλοπισμός Ζώου
+              Καλώπισμός Ζώου
             </CardTitle>
             <CardDescription className="pb-5 pl-4 pr-4">
               Dignissim per dis dignissim mi nibh a parturient habitasse
@@ -50,7 +50,7 @@ const Services = () => {
         <div className="flex justify-start mt-10">
           <MyButton
             title="Όλες οι υπηρεσίες"
-            href="/"
+            href="/services"
             style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1"
           />
         </div>

@@ -11,7 +11,7 @@ const Doctor = () => {
       <div className="flex flex-col md:flex-row justify-between w-full gap-4">
         <div className="md:w-1/2 flex items-center justify-end mb-4">
           <img
-            src="doctor1.jpg"
+            src="doctor2.jpg"
             alt="doctor"
             className="w-full max-h-[500px] object-contain"
           />
@@ -25,7 +25,7 @@ const Doctor = () => {
           </p>
           <MyButton
             title="Συνεχίστε την Ανάγνωση"
-            href="/"
+            href="/about"
             style="flex items-center gap-2 text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1 mr-5"
             icon={<ArrowRight />}
           ></MyButton>

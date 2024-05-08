@@ -21,23 +21,24 @@ const Hero = () => {
               className="text-white font-bold leading-1 text-4xl tracking-wider pb-4 max-w-[300px]
             md:text-5xl md:max-w-[500px] md:pb-10"
             >
-              Κτηνιατρείο <br />
-              Λίνα Ακακιάδου
+              Κτηνιατρείο <br /> Λίνα Ακακιάδου
             </h1>
             <p className="text-white pb-4 font-semibold text-sm md:text-xl md:pb-10">
               Η φροντίδα του ζώου σας, είναι προτεραιότητα μας!
             </p>
-            <MyButton
-              title="Διαβάστε Περισσότερα"
-              style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1 mr-5"
-              href="/about"
-            />
-            <MyButton
-              title="Επικοινωνία"
-              style="text-blue1 bg-white border border-white hover:bg-transparent
-                hover:text-white"
-              href="/contact"
-            />
+            <div className="flex">
+              <MyButton
+                title="Περισσότερα"
+                style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1 mr-5"
+                href="/about"
+              />
+              <MyButton
+                title="Επικοινωνία"
+                style="text-blue1 bg-white border border-white hover:bg-transparent
+              hover:text-white"
+                href="/contact"
+              />
+            </div>
           </div>
         </div>
 
