@@ -1,12 +1,13 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "Veterinary Practice",
-  description: "Lina Akakiadou veterinary practice",
+  title: "Κτηνιατρείο Καρβάλη - Υγεία των Ζώων - Λίνα Ακακιάδου",
+  description: "Κτηνιατρείο Λίνα Ακακιάδου - Υψηλές Υπηρεσίες Κτηνιατρείου",
 };
 
 export default function RootLayout({ children }) {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
