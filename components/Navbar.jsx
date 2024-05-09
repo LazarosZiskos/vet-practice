@@ -1,10 +1,13 @@
+"use client";
 import { navLinks } from "@/constants";
 import Link from "next/link";
 import React from "react";
 import { MenuIcon } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <header className="h-[50px] mt-5 mb-10">
       <div className="container flex items-center justify-between">
@@ -22,9 +25,11 @@ const Navbar = () => {
             <Link
               key={index}
               href={link.href}
-              className="font-semibold transition-all ease-in-out duration-200 hover:text-blue1 "
+              className={`font-semibold transition-all ease-in-out duration-200 hover:text-blue1 ${
+                pathname === link.href ? "text-blue1" : ""
+              }`}
             >
-              <h2>{link.title}</h2>
+              {link.title}
             </Link>
           ))}
         </div>
@@ -33,18 +38,21 @@ const Navbar = () => {
             <SheetTrigger>
               <MenuIcon />
             </SheetTrigger>
-            <SheetContent className="flex flex-col items-center justify-center">
+            <SheetContent className="flex flex-col items-center justify-center w-[300px]">
               {navLinks.map((link, index) => (
                 <div key={index} className="pb-5">
                   <Link
                     href={link.href}
-                    className="font-semibold uppercase transition-all ease-in-out duration-100 hover:text-blue1 "
+                    className={`font-semibold uppercase transition-all ease-in-out duration-100 hover:text-blue1 ${
+                      pathname === link.href ? "text-blue1" : ""
+                    }`}
                   >
-                    <h2>{link.title}</h2>
+                    {link.title}
                   </Link>
                 </div>
               ))}
             </SheetContent>
+            <SheetClose></SheetClose>
           </Sheet>
         </div>
       </div>
