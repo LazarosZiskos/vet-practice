@@ -13,7 +13,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-gray1 pt-10 pb-10 ">
-      <div className="container flex flex-col justify-center">
+      <div className="container flex flex-col justify-center items-center md:flex-row md:space-x-20 lg:justify-between">
         <div className="flex flex-col gap-4 items-center justify-center">
           <Link href="/">
             <img src="main_logo.jpg" alt="logo" className="w-[150px]" />
@@ -46,7 +46,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center justify-between pt-10 divide-x-10">
+        <div className="flex flex-col justify-center gap-10 items-start pt-10 md:flex-row lg:justify-around">
           <div className="flex flex-col justify-center items-start gap-2">
             <h3 className="text-xl pb-4 font-bold text-white">Menu</h3>
             <Link href="/" className="text-gray2/80 pb-1  hover:text-blue1">
@@ -85,8 +85,10 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <hr className="mt-5 mb-5" />
-        <div className="text-center text-gray2/70 text-xs">
+      </div>
+      <div className="flex flex-col justify-center items-center">
+        <hr className="mt-5 mb-5 w-[80%]" />
+        <div className="text-center text-gray2/70 text-xs lg:text-sm">
           © Copyright Lazaros Ziskos 2024
         </div>
       </div>
