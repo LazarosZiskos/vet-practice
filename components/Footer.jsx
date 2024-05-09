@@ -69,22 +69,34 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="flex flex-col gap-2 justify-center items-start">
+          <div className="flex flex-col gap-3 justify-center items-start">
             <h3 className="text-xl pb-4 font-bold text-white">Επικοινωνία</h3>
-            <p className="flex gap-4 items-center justify-center text-gray2/80">
-              <a href="tel:2510371262">
+            <a href="tel:2510371262">
+              <p className="flex gap-4 items-center justify-center text-gray2/80">
                 <Phone size={20} /> <span>2510 317262</span>
-              </a>
-            </p>
-            <p className="flex gap-4 items-center justify-center text-gray2/80">
-              <Mail size={20} /> <span>lakakiad@gmail.com</span>
-            </p>
-            <p className="flex gap-4 items-center justify-center text-gray2/80">
-              <MapPin size={20} /> <span>Νεα Καρβαλη, 64006</span>
-            </p>
-            <p className="flex gap-4 items-center justify-center text-gray2/80">
-              <Instagram /> <span>vetpractice_lina_akakiadou</span>
-            </p>
+              </p>
+            </a>
+            <a href="mailto:lakakiad@gmail.com">
+              <p className="flex gap-4 items-center justify-center text-gray2/80">
+                <Mail size={20} /> <span>lakakiad@gmail.com</span>
+              </p>
+            </a>
+            <a
+              href="https://www.google.com/maps/place/%CE%9A%CF%84%CE%B7%CE%BD%CE%B9%CE%B1%CF%84%CF%81%CE%B5%CE%AF%CE%BF+%7C+%CE%9B%CE%AF%CE%BD%CE%B1+%CE%91%CE%BA%CE%B1%CE%BA%CE%B9%CE%AC%CE%B4%CE%BF%CF%85/@40.9623287,24.5104422,17z/data=!3m1!4b1!4m6!3m5!1s0x14aea3985ec00933:0x3e018476d1d5f971!8m2!3d40.9623247!4d24.5130171!16s%2Fg%2F11t286y665?entry=ttu"
+              target="blank"
+            >
+              <p className="flex gap-4 items-center justify-center text-gray2/80">
+                <MapPin size={20} /> <span>Νεα Καρβαλη, 64006</span>
+              </p>
+            </a>
+            <a
+              href="https://www.instagram.com/vetpractice_lina_akakiadou/"
+              target="blank"
+            >
+              <p className="flex gap-4 items-center justify-center text-gray2/80">
+                <Instagram /> <span>vetpractice_lina_akakiadou</span>
+              </p>
+            </a>
           </div>
         </div>
       </div>
