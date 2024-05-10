@@ -132,7 +132,7 @@ const About = () => {
       </div>
 
       <div className="bg-gray2 pt-10 pb-10">
-        <div className="container mx-auto w-[400px]">
+        <div className="container mx-auto w-[400px] lg:w-[600px]">
           <div className="flex flex-col justify-center items-center bg-gray1 text-slate-400 p-5">
             <p>
               Η συνεχιζόμενη επιστημονική κατάρτιση και το αίσθημα ευθύνης
