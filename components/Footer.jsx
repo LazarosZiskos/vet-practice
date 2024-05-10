@@ -86,7 +86,7 @@ const Footer = () => {
               target="blank"
             >
               <p className="flex gap-4 items-center justify-center text-gray2/80">
-                <MapPin size={20} /> <span>Νεα Καρβαλη, 64006</span>
+                <MapPin size={20} /> <span>Νέα Καρβάλη, 64006</span>
               </p>
             </a>
             <a

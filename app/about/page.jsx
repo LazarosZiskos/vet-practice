@@ -1,3 +1,4 @@
+import MyButton from "@/components/MyButton";
 import {
   Accordion,
   AccordionContent,
@@ -54,7 +55,7 @@ const About = () => {
       <div className="bg-gray2 pt-10 pb-10">
         <div className="container flex flex-col items-center justify-center md:flex-row">
           <div className="flex flex-col items-center md:items-start justify-center w-full md:w-1/2">
-            <h1 className="text-3xl md:text-5xl font-bold">Τι κάνουμε</h1>
+            <h1 className="text-2xl md:text-3xl font-bold">Τι κάνουμε</h1>
             <p className="pt-10 text-gray1/70 text-sm md:text-md">
               Το Κτηνιατρείο λειτουργεί με επαγγελματισμό και με γνώμονα:
             </p>
@@ -98,10 +99,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container md:flex-row flex flex-col justify-center items-center pt-10 pb-10">
+      <div className="container md:flex-row flex flex-col-reverse justify-center items-center pt-10 pb-10">
         <div className="w-full md:w-1/2">
-          <h1 className="text-3xl md:text-5xl font-bold pb-10 text-center md:text-start">
-            Η Γιατρός
+          <h1 className="text-2xl md:text-3xl font-bold pb-10 text-center md:text-start">
+            Η Κτηνίατρος Λίνα Ακακιάδου
           </h1>
           <p className="text-md">
             <span className="text-red-500 font-bold">!!LINA BIO!!</span> Lorem
@@ -123,9 +124,52 @@ const About = () => {
           className="pt-10
           md:w-1/2
           flex justify-end
+          pb-5
         "
         >
-          <img src="doctor2.jpg" alt="lina-akakiadou" />
+          <img src="doctor2.jpg" alt="lina-akakiadou" className="rounded-lg" />
+        </div>
+      </div>
+
+      <div className="bg-gray2 pt-10 pb-10">
+        <div className="container mx-auto w-[400px]">
+          <div className="flex flex-col justify-center items-center bg-gray1 text-slate-400 p-5">
+            <p>
+              Η συνεχιζόμενη επιστημονική κατάρτιση και το αίσθημα ευθύνης
+              απέναντι στο ζώο και τον ιδιοκτήτη αποτελούν τους κύριους
+              παράγοντες που διασφαλίζουν την ποιότητα των υπηρεσιών που παρέχει
+              η κτηνίατρος Λίνα Ακακιάδου στο ιατρείο της στην Νέα Καρβάλη
+              Καβάλας.
+            </p>
+            <div className="pt-4 flex justify-between items-start text-white w-full">
+              <div>
+                <h2>Δευτέρα </h2>
+                <h2>Τρίτη </h2>
+                <h2>Τετάρτη </h2>
+                <h2>Πέμπτη</h2>
+                <h2>Παρασκευή </h2>
+                <h2>Σάββατο </h2>
+                <h2>Κυριακή </h2>
+              </div>
+              <div>
+                <h2>09:00-14:00 </h2>
+                <h2>09:00-14:00 & 17:00-21:00</h2>
+                <h2>09:00-14:00</h2>
+                <h2>09:00-14:00 & 17:00-21:00</h2>
+                <h2>09:00-14:00 & 17:00-21:00</h2>
+                <h2>10:00-14:00</h2>
+                <h2>ΚΛΕΙΣΤΑ</h2>
+              </div>
+            </div>
+            <div className="pt-5 w-full">
+              <MyButton
+                href="/contact"
+                title="ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ"
+                style="text-blue1 bg-white border border-white hover:bg-transparent
+              hover:text-white w-full"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
