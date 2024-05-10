@@ -15,38 +15,46 @@ const Questions = () => {
             ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ
           </h1>
         </div>
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible className="w-2/3 mx-auto">
           <AccordionItem value="item-1">
-            <AccordionTrigger className="text-blue1 text-md">
+            <AccordionTrigger className="text-md border-2 p-2 border-b-0 border-slate-200  hover:text-blue1 transition-all ease-out duration-250 font-bold">
               Είναι υποχρεωτικός ο εμβολιασμός των ζώων?
             </AccordionTrigger>
-            <AccordionContent>Ε μάλλον</AccordionContent>
+            <AccordionContent className="border-2 p-4 border-t-0 border-slate-200 text-slate-500">
+              - Ε μάλλον
+            </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger className="text-blue1 text-md">
+            <AccordionTrigger className="text-md border-2 p-2 border-b-0 border-slate-200 hover:text-blue1 transition-all ease-out duration-250 font-bold">
               Κάθε πότε πρέπει να επισκέπτομαι τον κτηνιατρό για Check up?
             </AccordionTrigger>
-            <AccordionContent>
-              Όσο πιο συχνά μπορείς! Καλό κάνει...
+            <AccordionContent className="border-2 p-4 border-t-0 border-slate-200 text-slate-500">
+              - Όσο πιο συχνά μπορείς! Καλό κάνει...
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger className="text-blue1 text-md">
+            <AccordionTrigger className="text-md border-2 p-2 border-b-0 border-slate-200  hover:text-blue1 transition-all ease-out duration-250 font-bold">
               Έχεις λαγο?
             </AccordionTrigger>
-            <AccordionContent>Έχω λαγό</AccordionContent>
+            <AccordionContent className="border-2 p-4 border-t-0 border-slate-200 text-slate-500">
+              - Έχω λαγό
+            </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
-            <AccordionTrigger className="text-blue1 text-md">
+            <AccordionTrigger className="text-md border-2 p-2 border-b-0 border-slate-200  hover:text-blue1 transition-all ease-out duration-250 font-bold">
               Έχει πόδια?
             </AccordionTrigger>
-            <AccordionContent>Έχω λαγό</AccordionContent>
+            <AccordionContent className="border-2 p-4 border-t-0 border-slate-200 text-slate-500">
+              - Έχω λαγό
+            </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
-            <AccordionTrigger className="text-blue1 text-md">
+            <AccordionTrigger className="text-md border-2 p-2 border-b-0 border-slate-200  hover:text-blue1 transition-all ease-out duration-250 font-bold">
               Έχεις λαγό?
             </AccordionTrigger>
-            <AccordionContent>Έχω λαγό</AccordionContent>
+            <AccordionContent className="border-2 p-4 border-t-0 border-slate-200 text-slate-500">
+              - Έχω λαγό
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>
