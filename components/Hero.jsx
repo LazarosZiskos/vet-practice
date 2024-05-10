@@ -3,7 +3,6 @@ import MyButton from "./MyButton";
 
 import MyCard from "./MyCard";
 import { BriefcaseMedical, Dog, Hospital } from "lucide-react";
-import Services from "./Services";
 
 const Hero = () => {
   return (
