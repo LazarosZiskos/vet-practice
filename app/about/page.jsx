@@ -53,7 +53,7 @@ const About = () => {
 
       <div className="bg-gray2 pt-10 pb-10">
         <div className="container flex flex-col items-center justify-center md:flex-row">
-          <div className="flex flex-col items-start justify-center w-1/2">
+          <div className="flex flex-col items-center md:items-start justify-center w-full md:w-1/2">
             <h1 className="text-3xl md:text-5xl font-bold">Τι κάνουμε</h1>
             <p className="pt-10 text-gray1/70 text-sm md:text-md">
               Το Κτηνιατρείο λειτουργεί με επαγγελματισμό και με γνώμονα:
@@ -64,7 +64,7 @@ const About = () => {
               <li> Την ξεκάθαρη επικοινωνία μεταξύ γιατρού και ιδιοκτήτη.</li>
             </ul>
           </div>
-          <div className="w-1/2 mt-10">
+          <div className="w-full md:w-1/2 mt-10">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-md border-2 p-5 md:p-8 border-b-0 border-slate-200  hover:text-blue1 transition-all ease-out duration-250 font-bold">
@@ -95,6 +95,37 @@ const About = () => {
               </AccordionItem>
             </Accordion>
           </div>
+        </div>
+      </div>
+
+      <div className="container md:flex-row flex flex-col justify-center items-center pt-10 pb-10">
+        <div className="w-full md:w-1/2">
+          <h1 className="text-3xl md:text-5xl font-bold pb-10 text-center md:text-start">
+            Η Γιατρός
+          </h1>
+          <p className="text-md">
+            <span className="text-red-500 font-bold">!!LINA BIO!!</span> Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Facere ad modi
+            repellat, labore dolorem amet hic, accusamus fugit esse est a.
+            Consequuntur quo amet magni tenetur obcaecati doloribus, et eos.
+            Omnis, beatae delectus tempore cumque quaerat praesentium amet sed
+            aperiam expedita temporibus placeat rerum error culpa magni
+            blanditiis quis eos aliquid repudiandae, suscipit dolores, repellat
+            itaque quas sint. Debitis, pariatur! Repellat qui reiciendis
+            expedita velit similique ratione exercitationem atque explicabo, ad
+            nemo rem blanditiis, omnis veniam, quis necessitatibus! Consectetur
+            reiciendis asperiores dolores molestias itaque nisi explicabo
+            consequatur id, harum pariatur? Consectetur voluptates labore soluta
+            corporis. Possimus ad non porro laboriosam
+          </p>
+        </div>
+        <div
+          className="pt-10
+          md:w-1/2
+          flex justify-end
+        "
+        >
+          <img src="doctor2.jpg" alt="lina-akakiadou" />
         </div>
       </div>
     </section>
