@@ -1,10 +1,9 @@
-import { FaUserDoctor } from "react-icons/fa6";
+import {FaUserDoctor} from "react-icons/fa6"
 import { FaMicroscope } from "react-icons/fa6";
 import { GiScalpel } from "react-icons/gi";
 import { TbDental } from "react-icons/tb";
 import { CiMedicalCross } from "react-icons/ci";
 import { PiBone } from "react-icons/pi";
-import { PiHairDryer } from "react-icons/pi";
 
 export const navLinks = [
   {
