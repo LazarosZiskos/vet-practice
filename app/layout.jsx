@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "Κτηνιατρείο Καρβάλη - Υγεία των Ζώων - Λίνα Ακακιάδου",
+  title: "Κτηνιατρείο Καρβάλη - Λίνα Ακακιάδου",
   description: "Κτηνιατρείο Λίνα Ακακιάδου - Υψηλές Υπηρεσίες Κτηνιατρείου",
 };
 

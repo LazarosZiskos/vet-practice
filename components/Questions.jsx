@@ -15,7 +15,11 @@ const Questions = () => {
             ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ
           </h1>
         </div>
-        <Accordion type="single" collapsible className="w-2/3 mx-auto">
+        <Accordion
+          type="single"
+          collapsible
+          className="md:w-2/3 mx-auto w-full"
+        >
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-md border-2 p-2 border-b-0 border-slate-200  hover:text-blue1 transition-all ease-out duration-250 font-bold">
               Είναι υποχρεωτικός ο εμβολιασμός των ζώων?
