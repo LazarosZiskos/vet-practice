@@ -51,7 +51,7 @@ const Contact = () => {
       </div>
 
       <div className="container pt-10 pb-10 md:flex items-center justify-between">
-        <div className="flex flex-col justify-center items-center md:flex-row md:w-1/2">
+        <div className="flex flex-col justify-center items-center md:flex-row md:justify-around w-full">
           <div className="flex flex-col justify-center items-center gap-3 pb-10 ">
             <Link
               href="mailto:lakakiad@gmail.com"
@@ -102,7 +102,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap w-full md:justify-center">
+        {/* <div className="flex flex-wrap w-full md:justify-center">
           <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6 border-2 p-10 border-gray1 rounded-md">
             <div className="pb-10 flex flex-col justify-center items-center text-center">
               <h2 className="text-3xl pb-2 font-bold max-w-[400px]">
@@ -149,7 +149,7 @@ const Contact = () => {
               </Button>
             </form>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
