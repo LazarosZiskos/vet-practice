@@ -1,3 +1,4 @@
+"use client";
 import MyButton from "@/components/MyButton";
 import {
   Breadcrumb,
@@ -6,15 +7,39 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
+import { useState } from "react";
 import { FaMailBulk, FaPhone } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { SlScreenSmartphone } from "react-icons/sl";
 
 const Contact = () => {
+  const [result, setResult] = useState("ΑΠΟΣΤΟΛΗ");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Αποστολή....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "9ef1351b-cda3-428c-a2d5-195e0ad8ead2");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Το μήνυμα σας έχει αποσταλεί!");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <section>
       <div className="top-[60px]">
@@ -136,15 +161,17 @@ const Contact = () => {
         </div>
         <div className="p-2">
           <form
-            action=""
+            onSubmit={onSubmit}
             className="flex flex-col gap-4 md:w-1/3 items-center justify-center mx-auto bg-gray2 rounded-md p-4"
           >
-            <Input type="name" placeholder="Όνομα" />
-            <Input type="surname" placeholder="Επίθετο" />
-            <Input type="email" placeholder="Email" />
-            <Textarea placeholder="Μήνυμα..." />
-            <button className="pt-2 pb-2 pl-5 pr-5 text-sm font-semibold transition-all ease-in-out duration-500 md:pb-3 md:pl-10 md:pt-3 md:pr-10 md:text-md text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1">
-              ΑΠΟΣΤΟΛΗ
+            <Input type="text" name="name" placeholder="Όνομα" />
+            <Input type="email" name="email" placeholder="Email" />
+            <Textarea name="message" placeholder="Μήνυμα..." />
+            <button
+              type="submit"
+              className="pt-2 pb-2 pl-5 pr-5 text-sm font-semibold transition-all ease-in-out duration-500 md:pb-3 md:pl-10 md:pt-3 md:pr-10 md:text-md text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1"
+            >
+              {result}
             </button>
           </form>
         </div>

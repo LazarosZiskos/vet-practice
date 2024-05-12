@@ -1,12 +1,13 @@
 "use client";
 import { navLinks } from "@/constants";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { MenuIcon } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const [sheetOpen, setSheetOpen] = useState(false);
   const pathname = usePathname();
   return (
     <header className="h-[50px] mt-5 mb-10">
@@ -34,7 +35,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="md:hidden">
-          <Sheet>
+          <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger>
               <MenuIcon />
             </SheetTrigger>
@@ -42,6 +43,7 @@ const Navbar = () => {
               {navLinks.map((link, index) => (
                 <div key={index} className="pb-5">
                   <Link
+                    onClick={() => setSheetOpen(false)}
                     href={link.href}
                     className={`font-semibold uppercase transition-all ease-in-out duration-100 hover:text-blue1 ${
                       pathname === link.href ? "text-blue1" : ""
@@ -52,7 +54,6 @@ const Navbar = () => {
                 </div>
               ))}
             </SheetContent>
-            <SheetClose></SheetClose>
           </Sheet>
         </div>
       </div>
