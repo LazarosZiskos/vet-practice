@@ -2,7 +2,7 @@ import React from "react";
 import MyButton from "./MyButton";
 
 import MyCard from "./MyCard";
-import { BriefcaseMedical, Dog, Hospital } from "lucide-react";
+import { BriefcaseMedical, Dog, Hospital, Syringe } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -44,23 +44,23 @@ const Hero = () => {
         <div className="absolute md:top-[650px] left-0 right-0 ml-auto mr-auto w-full">
           <div className=" mt-10 md:mt-0 mb-10 justify-center m-auto items-center container grid md:grid-cols-3 md:top-[650px] ">
             <MyCard
-              title="Διαγνωστικοί Έλεγχοι"
-              description="Διαγνωστικοί έλεγχοι για καθε ειδους περιστατικό"
+              title="Πρόληψη"
+              description="Προληπτικοί έλεγχοι και εμβολιασμοί"
               style="bg-gray2 "
-              icon={<Hospital size={40} className="text-blue1" />}
+              icon={<BriefcaseMedical size={40} className="text-blue1" />}
             />
             <MyCard
-              title="Περιποίηση"
-              description="Καλωπισμός και φροντίδα του κατοικιδίου σας"
+              title="Διάγνωση"
+              description="Διαγνωστικές εξετάσεις αίματος"
               style="bg-blue1 text-white"
-              icon={<Dog size={40} className="text-white" />}
+              icon={<Syringe size={40} className="text-white" />}
               descStyle="text-white"
             />
             <MyCard
-              title="Χειρουργεία"
-              description="Υπηρεσίες χειρουργείου για διάφορες περιπτώσεις"
+              title="Θεραπεία"
+              description="Υπηρεσίες χειρουργείου και νοσηλείας"
               style="bg-gray1 text-white"
-              icon={<BriefcaseMedical size={40} className="text-blue1" />}
+              icon={<Hospital size={40} className="text-blue1" />}
               descStyle="text-white"
             />
           </div>
