@@ -1,3 +1,4 @@
+"use client";
 import Service from "@/components/Service";
 import {
   Breadcrumb,
@@ -7,8 +8,18 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { services } from "@/constants";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Services = () => {
+  useGSAP(() => {
+    gsap.from("#div2", {
+      opacity: 0,
+      ease: "power1.in",
+      duration: 1,
+      stagger: 0.5,
+    });
+  }, []);
   return (
     <section>
       <div className="top-[60px]">
@@ -47,7 +58,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="container pt-10 pb-10">
+      <div className="container pt-10 pb-10" id="div2">
         <div>
           <h2 className="text-center mx-auto text-slate-400 text-sm md:text-md lg:w-[1000px]">
             Οι υπηρεσίες που παρέχονται στο κτηνιατρείο που διατηρεί στην Νέα
@@ -64,6 +75,7 @@ const Services = () => {
               subtitle={service.subtitle}
               icon={service.icon}
               key={index}
+              id="div2"
             />
           ))}
         </div>

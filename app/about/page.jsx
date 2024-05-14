@@ -1,3 +1,4 @@
+"use client";
 import MyButton from "@/components/MyButton";
 import {
   Accordion,
@@ -12,8 +13,18 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const About = () => {
+  useGSAP(() => {
+    gsap.from("#trigger", {
+      opacity: 0,
+      ease: "power1.in",
+      duration: 1,
+      stagger: 0.5,
+    });
+  }, []);
   return (
     <section>
       <div className="top-[60px]">
@@ -52,7 +63,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="bg-gray2 pt-10 pb-10">
+      <div className="bg-gray2 pt-10 pb-10" id="trigger">
         <div className="container flex flex-col items-center justify-center md:flex-row">
           <div className="flex flex-col items-center md:items-start justify-center w-full md:w-1/2">
             <h1 className="text-2xl md:text-3xl font-bold">Τι κάνουμε</h1>
@@ -65,7 +76,7 @@ const About = () => {
               <li> Την ξεκάθαρη επικοινωνία μεταξύ γιατρού και ιδιοκτήτη.</li>
             </ul>
           </div>
-          <div className="w-full md:w-1/2 mt-10">
+          <div className="w-full md:w-1/2 mt-10" id="trigger">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-md border-2 p-5 md:p-8 border-b-0 border-slate-200  hover:text-blue1 transition-all ease-out duration-250 font-bold">
@@ -99,7 +110,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container md:flex-row flex flex-col-reverse justify-center items-center pt-10 pb-10">
+      <div
+        className="container md:flex-row flex flex-col-reverse justify-center items-center pt-10 pb-10"
+        id="trigger"
+      >
         <div className="w-full md:w-1/2">
           <h1 className="text-2xl md:text-3xl font-bold pb-10 text-center md:text-start">
             Η Κτηνίατρος Λίνα Ακακιάδου
@@ -131,7 +145,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="bg-gray2 pt-10 pb-10">
+      <div className="bg-gray2 pt-10 pb-10" id="trigger">
         <div className="container mx-auto w-[400px] lg:w-[600px]">
           <div className="flex flex-col justify-center items-center bg-gray1 text-slate-400 p-5">
             <p>

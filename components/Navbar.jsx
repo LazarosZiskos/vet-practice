@@ -45,7 +45,7 @@ const Navbar = () => {
                   <Link
                     onClick={() => setSheetOpen(false)}
                     href={link.href}
-                    className={`font-semibold uppercase transition-all ease-in-out duration-100 hover:text-blue1 ${
+                    className={`font-semibold transition-all ease-in-out duration-100 hover:text-blue1 ${
                       pathname === link.href ? "text-blue1" : ""
                     }`}
                   >
