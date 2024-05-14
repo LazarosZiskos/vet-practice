@@ -1,10 +1,35 @@
+"use client";
 import React from "react";
 import MyButton from "./MyButton";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Scroll } from "lucide-react";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Doctor = () => {
+  const scrollref = useRef();
+
+  useGSAP(() => {
+    const boxes = gsap.utils.toArray(scrollref.current.children);
+
+    boxes.forEach((box) => {
+      gsap.from(box, {
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: box,
+          start: "bottom, bottom",
+        },
+        ease: "power1.in",
+      });
+    });
+  }, []);
+
   return (
-    <section className="container mt-20 mb-20">
+    <section className="container mt-20 mb-20" ref={scrollref}>
       <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">
         Η ΚΤΗΝΙΑΤΡΟΣ
       </h1>

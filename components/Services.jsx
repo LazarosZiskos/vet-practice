@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { Card, CardDescription, CardTitle } from "./ui/card";
 import MyButton from "./MyButton";
 import { ScrollTrigger } from "gsap/all";
@@ -7,45 +6,30 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
   const scrollref = useRef();
 
-  // useGSAP(() => {
-  //   const boxes = gsap.utils.toArray(scrollref.current.children);
-
-  //   boxes.forEach((box) => {
-  //     gsap.from(box, {
-  //       scale: 1,
-  //       duration: 1,
-  //       stagger: 0.5,
-  //       scrollTrigger: {
-  //         trigger: box,
-  //         start: "bottom, bottom",
-  //         end: "top 20%",
-  //         scrub: true,
-  //       },
-  //       ease: "power1.in",
-  //     });
-  //   });
-  // }, []);
-
   useGSAP(() => {
-    gsap.from("#div2", {
-      opacity: 0,
-      ease: "power1.in",
-      duration: 1,
-      stagger: 0.5,
+    const boxes = gsap.utils.toArray(scrollref.current.children);
+
+    boxes.forEach((box) => {
+      gsap.from(box, {
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: box,
+          start: "bottom, bottom",
+        },
+        ease: "power1.in",
+      });
     });
   }, []);
 
   return (
-    <div
-      className="bg-gray2 pb-20 mt-[900px] md:mt-[300px] lg:mt-[250px]"
-      id="div2"
-    >
-      <div className="container">
+    <div className="bg-gray2 pb-20 mt-[900px] md:mt-[300px] lg:mt-[250px]">
+      <div className="container" id="div2">
         <div className="pt-20 items-center justify-center flex flex-col">
           <h1 className="font-bold text-2xl lg:text-4xl pb-4 tracking-wider">
             ΥΠΗΡΕΣΙΕΣ
@@ -55,7 +39,10 @@ const Services = () => {
             κατοικιδίου σας.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10 md:grid-cols-3">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10 md:grid-cols-3"
+          ref={scrollref}
+        >
           <Card>
             <img src="dog1.jpg" alt="dog1" className="w-full" />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">

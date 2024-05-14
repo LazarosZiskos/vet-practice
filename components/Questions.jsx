@@ -1,15 +1,38 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Questions = () => {
+  const scrollref = useRef();
+
+  useGSAP(() => {
+    const boxes = gsap.utils.toArray(scrollref.current.children);
+
+    boxes.forEach((box) => {
+      gsap.from(box, {
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: box,
+          start: "bottom, bottom",
+        },
+        ease: "power1.in",
+      });
+    });
+  }, []);
   return (
     <section className="pt-20 pb-10 bg-gray2">
-      <div className="container">
+      <div className="container" ref={scrollref}>
         <div className="mb-4">
           <h1 className="font-bold text-center text-2xl lg:text-4xl pb-4 tracking-wider">
             ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ

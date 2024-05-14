@@ -1,5 +1,4 @@
-import React from "react";
-
+"use client";
 import {
   Carousel,
   CarouselContent,
@@ -7,11 +6,35 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useRef } from "react";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Space = () => {
+  const scrollref = useRef();
+
+  useGSAP(() => {
+    const boxes = gsap.utils.toArray(scrollref.current.children);
+
+    boxes.forEach((box) => {
+      gsap.from(box, {
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: box,
+          start: "bottom, bottom",
+        },
+        ease: "power1.in",
+      });
+    });
+  }, []);
+
   return (
     <section className="bg-gray2 pt-20 overflow-hidden">
-      <div className="container">
+      <div className="container" ref={scrollref}>
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">
             Ο ΧΩΡΟΣ
