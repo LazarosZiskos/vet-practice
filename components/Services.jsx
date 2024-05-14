@@ -7,30 +7,46 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
   const scrollref = useRef();
 
-  useGSAP(() => {
-    const boxes = gsap.utils.toArray(scrollref.current.children);
+  // useGSAP(() => {
+  //   const boxes = gsap.utils.toArray(scrollref.current.children);
 
-    boxes.forEach((box) => {
-      gsap.from(box, {
-        scale: 1,
-        ease: "power1.in",
-        duration: 1,
-      });
+  //   boxes.forEach((box) => {
+  //     gsap.from(box, {
+  //       scale: 1,
+  //       duration: 1,
+  //       stagger: 0.5,
+  //       scrollTrigger: {
+  //         trigger: box,
+  //         start: "bottom, bottom",
+  //         end: "top 20%",
+  //         scrub: true,
+  //       },
+  //       ease: "power1.in",
+  //     });
+  //   });
+  // }, []);
+
+  useGSAP(() => {
+    gsap.from("#div2", {
+      opacity: 0,
+      ease: "power1.in",
+      duration: 1,
+      stagger: 0.5,
     });
   }, []);
 
   return (
-    <div className="bg-gray2 pb-20 mt-[900px] md:mt-[300px] lg:mt-[250px]">
+    <div
+      className="bg-gray2 pb-20 mt-[900px] md:mt-[300px] lg:mt-[250px]"
+      id="div2"
+    >
       <div className="container">
-        <div
-          className="pt-20 items-center justify-center flex flex-col"
-          ref={scrollref}
-        >
+        <div className="pt-20 items-center justify-center flex flex-col">
           <h1 className="font-bold text-2xl lg:text-4xl pb-4 tracking-wider">
             ΥΠΗΡΕΣΙΕΣ
           </h1>
