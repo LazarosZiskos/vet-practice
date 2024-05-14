@@ -1,10 +1,22 @@
+"use client";
 import React from "react";
 import MyButton from "./MyButton";
 
 import MyCard from "./MyCard";
-import { BriefcaseMedical, Dog, Hospital, Syringe } from "lucide-react";
+import { BriefcaseMedical, Hospital, Syringe } from "lucide-react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Hero = () => {
+  useGSAP(() => {
+    gsap.from("#div1", {
+      opacity: 0,
+      ease: "power1.in",
+      duration: 1,
+      stagger: 0.5,
+    });
+  }, []);
+
   return (
     <section>
       <div className="top-[20px]">
@@ -15,7 +27,7 @@ const Hero = () => {
         />
         <div className="bg-black/40 absolute top-[157px] w-full h-[64.4vh]" />
         <div className="absolute justify-center items-center flex flex-col top-[120px] w-full h-[70vh]">
-          <div className="container">
+          <div className="container" id="div1">
             <h1
               className="text-white font-bold leading-1 text-4xl tracking-wider pb-4 max-w-[300px]
             md:text-5xl md:max-w-[500px] md:pb-10"
@@ -42,7 +54,10 @@ const Hero = () => {
         </div>
 
         <div className="absolute md:top-[650px] left-0 right-0 ml-auto mr-auto w-full">
-          <div className=" mt-10 md:mt-0 mb-10 justify-center m-auto items-center container grid md:grid-cols-3 md:top-[650px] ">
+          <div
+            id="div1"
+            className=" mt-10 md:mt-0 mb-10 justify-center m-auto items-center container grid md:grid-cols-3 md:top-[650px] "
+          >
             <MyCard
               title="Πρόληψη"
               description="Προληπτικοί έλεγχοι και εμβολιασμοί"

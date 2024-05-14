@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Link from "next/link";
 import { useState } from "react";
 import { FaMailBulk, FaPhone } from "react-icons/fa";
@@ -17,6 +19,15 @@ import { SlScreenSmartphone } from "react-icons/sl";
 
 const Contact = () => {
   const [result, setResult] = useState("ΑΠΟΣΤΟΛΗ");
+
+  useGSAP(() => {
+    gsap.from("#trigger", {
+      opacity: 0,
+      ease: "power1.in",
+      duration: 1,
+      stagger: 0.5,
+    });
+  }, []);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -78,9 +89,15 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="container pt-10 pb-10 md:flex items-center justify-between">
+      <div
+        id="trigger"
+        className="container pt-10 pb-10 md:flex items-center justify-between"
+      >
         <div className="flex flex-col justify-center items-center md:flex-row md:justify-around w-full">
-          <div className="flex flex-col justify-center items-center gap-3 pb-10 ">
+          <div
+            className="flex flex-col justify-center items-center gap-3 pb-10"
+            id="trigger"
+          >
             <Link
               href="mailto:lakakiad@gmail.com"
               target="blank"
@@ -97,7 +114,10 @@ const Contact = () => {
               target="blank"
             />
           </div>
-          <div className="flex flex-col justify-center items-center gap-3 pb-10">
+          <div
+            className="flex flex-col justify-center items-center gap-3 pb-10"
+            id="trigger"
+          >
             <Link
               href="tel:2510371262"
               target="blank"
@@ -114,7 +134,10 @@ const Contact = () => {
               target="blank"
             />
           </div>
-          <div className="flex flex-col justify-center items-center gap-3 pb-10">
+          <div
+            className="flex flex-col justify-center items-center gap-3 pb-10"
+            id="trigger"
+          >
             <Link
               href="tel:6937014058"
               target="blank"
@@ -131,7 +154,10 @@ const Contact = () => {
               target="blank"
             />
           </div>
-          <div className="flex flex-col justify-center items-center gap-3 pb-10">
+          <div
+            className="flex flex-col justify-center items-center gap-3 pb-10"
+            id="trigger"
+          >
             <Link
               target="blank"
               className="flex flex-col justify-center items-center"
@@ -151,7 +177,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="container pb-10">
+      <div id="trigger" className="container pb-10">
         <div className="flex flex-col justify-center items-center text-center">
           <h2 className="text-2xl">Μην διστάσετε να επικοινωνήσετε μαζί μας</h2>
           <p className="text-sm pt-2 pb-4 w-[250px] text-slate-400">

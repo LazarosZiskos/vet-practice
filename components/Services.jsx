@@ -1,12 +1,36 @@
+"use client";
 import React from "react";
-import { Card, CardDescription, CardFooter, CardTitle } from "./ui/card";
+import { Card, CardDescription, CardTitle } from "./ui/card";
 import MyButton from "./MyButton";
+import { ScrollTrigger } from "gsap/all";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
+  const scrollref = useRef();
+
+  useGSAP(() => {
+    const boxes = gsap.utils.toArray(scrollref.current.children);
+
+    boxes.forEach((box) => {
+      gsap.from(box, {
+        scale: 1,
+        ease: "power1.in",
+        duration: 1,
+      });
+    });
+  }, []);
+
   return (
     <div className="bg-gray2 pb-20 mt-[900px] md:mt-[300px] lg:mt-[250px]">
       <div className="container">
-        <div className="pt-20 items-center justify-center flex flex-col">
+        <div
+          className="pt-20 items-center justify-center flex flex-col"
+          ref={scrollref}
+        >
           <h1 className="font-bold text-2xl lg:text-4xl pb-4 tracking-wider">
             ΥΠΗΡΕΣΙΕΣ
           </h1>
