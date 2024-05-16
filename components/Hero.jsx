@@ -21,7 +21,11 @@ const Hero = () => {
   return (
     <section>
       <div className="top-[20px]">
-        <img className="w-full h-[70vh] pt-12" src="/dog2.jpg" alt="dog-2" />
+        <img
+          className="w-full h-[70vh] pt-12 object-cover"
+          src="/dog2.jpg"
+          alt="dog-2"
+        />
         {/* <div className="bg-black/40 absolute top-[157px] w-full h-[64.4vh]" /> */}
         <div className="absolute justify-center items-center flex flex-col top-[120px] w-full h-[70vh]">
           <div className="container" id="div1">

@@ -1,17 +1,19 @@
-import { FaUserDoctor } from "react-icons/fa6";
+import Link from "next/link";
 
-const Service = ({ title, subtitle, icon, id }) => {
+const Service = ({ title, subtitle, icon, id, href }) => {
   return (
-    <div
-      className="flex flex-col items-center justify-center gap-4 pb-10"
-      id={id}
-    >
-      <div className=" text-blue1">{icon}</div>
-      <h2 className="text-xl">{title}</h2>
-      <p className="text-sm text-slate-400 max-w-[300px] text-center">
-        {subtitle}
-      </p>
-    </div>
+    <Link href={href}>
+      <div
+        className="flex flex-col items-center justify-center gap-4 pb-10"
+        id={id}
+      >
+        <div className=" text-blue1">{icon}</div>
+        <h2 className="text-xl">{title}</h2>
+        <p className="text-sm text-slate-400 max-w-[300px] text-center">
+          {subtitle}
+        </p>
+      </div>
+    </Link>
   );
 };
 

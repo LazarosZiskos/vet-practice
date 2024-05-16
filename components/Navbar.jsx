@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="text-xl font-bold md:text-3xl mb-10">
           <a href="/">
             <img
-              src="main_logo.jpg"
+              src="/main_logo.jpg"
               alt="logo"
               className="w-[150px] h-full"
             ></img>

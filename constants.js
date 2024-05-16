@@ -1,4 +1,4 @@
-import {FaUserDoctor} from "react-icons/fa6"
+import { FaUserDoctor } from "react-icons/fa6";
 import { FaMicroscope } from "react-icons/fa6";
 import { GiScalpel } from "react-icons/gi";
 import { TbDental } from "react-icons/tb";
@@ -65,31 +65,37 @@ export const services = [
     subtitle:
       "Ο ετήσιος κτηνιατρικός έλεγχος πρέπει να είναι στις προτεραιότητες σας",
     icon: <FaUserDoctor size={100} />,
+    href: "/services/details",
   },
   {
     title: "Διαγνωστικές Εξετάσεις",
     subtitle: "Απαραίτητες για τη διαγνωστική προσέγγιση των ασθενειών",
     icon: <FaMicroscope size={100} />,
+    href: "/services/details",
   },
   {
     title: "Χειρουργικές Επεμβάσεις",
     subtitle: "To κτηνιατρείο είναι εξοπλισμένο με σύγχρονα μηχανήματα",
     icon: <GiScalpel size={100} />,
+    href: "/services/details",
   },
   {
     title: "Οδοντιατρική Φροντίδα",
     subtitle: "Η τακτική φροντίδα των δοντιών είναι απαραίτητη",
     icon: <TbDental size={100} />,
+    href: "/services/details",
   },
   {
     title: "Φαρμακείο",
     subtitle: "Πλήρως εξοπλισμένο φαρμακείο στον χώρο μας",
     icon: <CiMedicalCross size={100} />,
+    href: "/services/details",
   },
   {
     title: "Κλινικές Δίαιτες",
     subtitle:
       "Προτάσεις για την διατροφή του ζώου σας σε όλα τα στάδια της ζωής του",
     icon: <PiBone size={100} />,
+    href: "/services/details",
   },
 ];

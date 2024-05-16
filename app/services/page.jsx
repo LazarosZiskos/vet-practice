@@ -76,6 +76,7 @@ const Services = () => {
               icon={service.icon}
               key={index}
               id="div2"
+              href={service.href}
             />
           ))}
         </div>

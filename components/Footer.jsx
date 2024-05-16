@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="container flex flex-col justify-center items-center md:flex-row md:space-x-20 lg:justify-between">
         <div className="flex flex-col gap-4 items-center justify-center">
           <Link href="/">
-            <img src="main_logo.jpg" alt="logo" className="w-[150px]" />
+            <img src="/main_logo.jpg" alt="logo" className="w-[150px]" />
           </Link>
           <p className="text-gray2/60 text-sm max-w-[350px] text-center">
             Είμαστε πάντα πρόθυμοι να σας εξυπηρετήσουμε <br />
