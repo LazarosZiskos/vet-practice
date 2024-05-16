@@ -2,7 +2,10 @@ import Link from "next/link";
 
 const Service = ({ title, subtitle, icon, id, href }) => {
   return (
-    <Link href={href}>
+    <Link
+      href={href}
+      className="hover:bg-slate-200 rounded-lg p-6 transition-all ease-in-out duration-250"
+    >
       <div
         className="flex flex-col items-center justify-center gap-4 pb-10"
         id={id}
