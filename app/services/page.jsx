@@ -17,7 +17,7 @@ const Services = () => {
       opacity: 0,
       ease: "power1.in",
       duration: 1,
-      stagger: 0.5,
+      stagger: 0.3,
     });
   }, []);
   return (

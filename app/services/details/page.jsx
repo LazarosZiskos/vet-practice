@@ -1,3 +1,4 @@
+"use client";
 import DetailService from "@/components/DetailService";
 import {
   Breadcrumb,
@@ -7,8 +8,17 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { detailServices } from "@/constants";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const ServiceDetails = () => {
+  useGSAP(() => {
+    gsap.from("#trigger", {
+      opacity: 0,
+      ease: "power1.in",
+      duration: 1,
+    });
+  }, []);
   return (
     <section>
       <div className="top-[60px]">
@@ -57,7 +67,7 @@ const ServiceDetails = () => {
       </div>
 
       <div className="container mt-20 pb-10">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center" id="trigger">
           {detailServices.map((serv, idx) => (
             <DetailService
               key={idx}

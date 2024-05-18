@@ -61,20 +61,23 @@ const Hero = () => {
           >
             <MyCard
               title="Πρόληψη"
-              description="Προληπτικοί έλεγχοι και εμβολιασμοί"
+              description="Προγράμματα εμβολιασμών-αποπαρασιτώσεων & Συμβουλευτική σύμφωνα
+              με τις ανάγκες του κάθε ζώου και του κηδεμόνα του."
               style="bg-gray2 "
               icon={<BriefcaseMedical size={40} className="text-blue1" />}
             />
             <MyCard
               title="Διάγνωση"
-              description="Διαγνωστικές εξετάσεις αίματος"
+              description="Αξιολόγηση και εκτίμηση συμπτωμάτων κάθε περιστατικού με τις
+              απαραίτητες εξετάσεις."
               style="bg-blue1 text-white"
               icon={<Syringe size={40} className="text-white" />}
               descStyle="text-white"
             />
             <MyCard
               title="Θεραπεία"
-              description="Υπηρεσίες χειρουργείου και νοσηλείας"
+              description="Απαραίτητη φαρμακευτική αγωγή, νοσηλεία, χειρουργεία και
+              παρακολούθηση (follow-up)."
               style="bg-gray1 text-white"
               icon={<Hospital size={40} className="text-blue1" />}
               descStyle="text-white"

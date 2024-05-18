@@ -33,7 +33,7 @@ const Space = () => {
   }, []);
 
   return (
-    <section className="bg-gray2 pt-20 overflow-hidden">
+    <section className="bg-gray2 pt-10 overflow-hidden">
       <div className="container" ref={scrollref}>
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">

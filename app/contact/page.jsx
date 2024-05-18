@@ -25,7 +25,7 @@ const Contact = () => {
       opacity: 0,
       ease: "power1.in",
       duration: 1,
-      stagger: 0.5,
+      stagger: 0.3,
     });
   }, []);
 
@@ -56,7 +56,7 @@ const Contact = () => {
       <div className="top-[60px]">
         <img
           className="w-full h-[30vh] object-cover pt-12"
-          src="bg-about.jpg"
+          src="/bg-about.jpg"
           alt="services-photo"
         />
         <div className="absolute justify-center items-center flex flex-col top-[100px] w-full h-[40vh]">

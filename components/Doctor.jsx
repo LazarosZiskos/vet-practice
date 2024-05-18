@@ -29,7 +29,7 @@ const Doctor = () => {
   }, []);
 
   return (
-    <section className="container mt-20 mb-20" ref={scrollref}>
+    <section className="container pt-10 mb-10" ref={scrollref}>
       <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">
         Η ΚΤΗΝΙΑΤΡΟΣ
       </h1>

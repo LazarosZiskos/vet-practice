@@ -28,9 +28,9 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="bg-gray2 pb-20 mt-[900px] md:mt-[300px] lg:mt-[250px]">
+    <div className="bg-gray2 pb-10 mt-[1000px] md:mt-[300px] lg:mt-[350px]">
       <div className="container" id="div2">
-        <div className="pt-20 items-center justify-center flex flex-col">
+        <div className="pt-10 items-center justify-center flex flex-col">
           <h1 className="font-bold text-2xl lg:text-4xl pb-4 tracking-wider">
             ΥΠΗΡΕΣΙΕΣ
           </h1>

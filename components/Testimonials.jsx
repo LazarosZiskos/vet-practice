@@ -28,11 +28,11 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="pt-20 pb-10 container items-center" ref={scrollref}>
+    <section className="pt-10 pb-10 container items-center" ref={scrollref}>
       <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">
         ΑΞΙΟΛΟΓΗΣΕΙΣ
       </h1>
-      <div className="flex flex-col items-center justify-center md:flex-row flex-wrap gap-4 mt-20">
+      <div className="flex flex-col items-center justify-center md:flex-row flex-wrap gap-4 ">
         {reviews.map((review, idx) => (
           <div key={idx}>
             <TestimonialCard

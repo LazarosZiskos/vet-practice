@@ -31,7 +31,7 @@ const Questions = () => {
     });
   }, []);
   return (
-    <section className="pt-20 pb-10 bg-gray2">
+    <section className="pt-10 pb-10 bg-gray2">
       <div className="container" ref={scrollref}>
         <div className="mb-4">
           <h1 className="font-bold text-center text-2xl lg:text-4xl pb-4 tracking-wider">

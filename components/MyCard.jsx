@@ -17,7 +17,7 @@ const MyCard = ({ title, description, style, icon, descStyle }) => {
             <span>{icon}</span>
             {title}
           </CardTitle>
-          <CardDescription className={`${descStyle}`}>
+          <CardDescription className={`${descStyle} + h-[100px]`}>
             {description}
           </CardDescription>
         </CardHeader>
