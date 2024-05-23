@@ -22,6 +22,7 @@ const Contact = () => {
 
   useGSAP(() => {
     gsap.from("#trigger", {
+      y: 75,
       opacity: 0,
       ease: "power1.in",
       duration: 1,

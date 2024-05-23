@@ -18,7 +18,8 @@ const Doctor = () => {
     boxes.forEach((box) => {
       gsap.from(box, {
         opacity: 0,
-        duration: 1,
+        y: 75,
+        duration: 0.7,
         scrollTrigger: {
           trigger: box,
           start: "bottom, bottom",

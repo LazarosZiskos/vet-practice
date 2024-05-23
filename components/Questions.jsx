@@ -21,6 +21,7 @@ const Questions = () => {
     boxes.forEach((box) => {
       gsap.from(box, {
         opacity: 0,
+        y: 75,
         duration: 1,
         scrollTrigger: {
           trigger: box,

@@ -15,8 +15,9 @@ const ServiceDetails = () => {
   useGSAP(() => {
     gsap.from("#trigger", {
       opacity: 0,
+      y: 75,
       ease: "power1.in",
-      duration: 1,
+      duration: 0.7,
     });
   }, []);
   return (

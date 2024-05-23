@@ -12,8 +12,9 @@ const Hero = () => {
   useGSAP(() => {
     gsap.from("#div1", {
       opacity: 0,
+      y: 75,
       ease: "power1.in",
-      duration: 1,
+      duration: 0.5,
       stagger: 0.5,
     });
   }, []);

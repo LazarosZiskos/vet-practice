@@ -15,6 +15,7 @@ const Services = () => {
   useGSAP(() => {
     gsap.from("#div2", {
       opacity: 0,
+      y: 75,
       ease: "power1.in",
       duration: 1,
       stagger: 0.3,

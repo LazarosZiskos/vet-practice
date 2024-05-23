@@ -20,6 +20,7 @@ const About = () => {
   useGSAP(() => {
     gsap.from("#trigger", {
       opacity: 0,
+      y: 75,
       ease: "power1.in",
       duration: 1,
       stagger: 0.5,
