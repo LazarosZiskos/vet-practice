@@ -6,7 +6,7 @@ import MyCard from "./MyCard";
 import { BriefcaseMedical, Hospital, Syringe } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
   useGSAP(() => {
@@ -18,6 +18,8 @@ const Hero = () => {
       stagger: 0.5,
     });
   }, []);
+
+  const { t } = useTranslation();
 
   return (
     <section>
@@ -34,14 +36,14 @@ const Hero = () => {
               className="text-white font-bold leading-1 text-4xl tracking-wider pb-4 max-w-[300px]
             md:text-5xl md:max-w-[500px] md:pb-10"
             >
-              Κτηνιατρείο <br /> Λίνα Ακακιάδου
+              {t("ktiniatreio")} <br /> {t("lina")}
             </h1>
             <p className="text-white pb-4 font-semibold text-sm md:text-xl md:pb-10">
-              Η φροντίδα του ζώου σας, είναι προτεραιότητα μας!
+              {t("subheader")}
             </p>
             <div className="flex">
               <MyButton
-                title="Περισσότερα"
+                title={t("perissotera")}
                 style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1 mr-5"
                 href="/about"
               />

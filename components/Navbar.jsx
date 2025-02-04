@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { MenuIcon } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
+import LanguageChanger from "./LanguangeChanger";
 
 const Navbar = () => {
   const [sheetOpen, setSheetOpen] = useState(false);
@@ -56,6 +57,7 @@ const Navbar = () => {
             </SheetContent>
           </Sheet>
         </div>
+        <LanguageChanger />
       </div>
     </header>
   );
