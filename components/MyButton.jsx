@@ -3,7 +3,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const MyButton = ({ title, style, href, icon, target }) => {
-  const { t } = useTranslation();
   return (
     <Link href={href} target={target}>
       <button

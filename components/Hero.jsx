@@ -48,7 +48,7 @@ const Hero = () => {
                 href="/about"
               />
               <MyButton
-                title="Επικοινωνία"
+                title={t("epikoinwnia")}
                 style="text-blue1 bg-white border border-white hover:bg-transparent
               hover:text-white"
                 href="/contact"
@@ -63,24 +63,21 @@ const Hero = () => {
             className=" mt-10 md:mt-0 mb-10 justify-center m-auto items-center container grid md:grid-cols-3 md:top-[650px] "
           >
             <MyCard
-              title="Πρόληψη"
-              description="Προγράμματα εμβολιασμών-αποπαρασιτώσεων & Συμβουλευτική σύμφωνα
-              με τις ανάγκες του κάθε ζώου και του κηδεμόνα του."
+              title={t("prolipsi")}
+              description={t("prolipsi-desc")}
               style="bg-gray2 "
               icon={<BriefcaseMedical size={40} className="text-blue1" />}
             />
             <MyCard
-              title="Διάγνωση"
-              description="Αξιολόγηση και εκτίμηση συμπτωμάτων κάθε περιστατικού με τις
-              απαραίτητες εξετάσεις."
+              title={t("diagnosi")}
+              description={t("diagnosi-desc")}
               style="bg-blue1 text-white"
               icon={<Syringe size={40} className="text-white" />}
               descStyle="text-white"
             />
             <MyCard
-              title="Θεραπεία"
-              description="Απαραίτητη φαρμακευτική αγωγή, νοσηλεία, χειρουργεία και
-              παρακολούθηση (follow-up)."
+              title={t("therapeia")}
+              description={t("therapeia-desc")}
               style="bg-gray1 text-white"
               icon={<Hospital size={40} className="text-blue1" />}
               descStyle="text-white"

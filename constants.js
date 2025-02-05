@@ -7,22 +7,41 @@ import { PiBone } from "react-icons/pi";
 
 export const navLinks = [
   {
-    title: "Αρχική",
+    title: "nav.home", // Translation key
     href: "/",
   },
   {
-    title: "Σχετικά με Εμάς",
+    title: "nav.about",
     href: "/about",
   },
   {
-    title: "Υπηρεσίες",
+    title: "nav.services",
     href: "/services",
   },
   {
-    title: "Επικοινωνία",
+    title: "nav.contact",
     href: "/contact",
   },
 ];
+
+// export const navLinks = [
+//   {
+//     title: "Αρχική",
+//     href: "/",
+//   },
+//   {
+//     title: "Σχετικά με Εμάς",
+//     href: "/about",
+//   },
+//   {
+//     title: "Υπηρεσίες",
+//     href: "/services",
+//   },
+//   {
+//     title: "Επικοινωνία",
+//     href: "/contact",
+//   },
+// ];
 
 export const reviews = [
   // {

@@ -8,7 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import initTranslations from "../i18";
 import TranslationsProvider from "@/components/TranslationsProvider";
 
-const i18nNamespaces = ["Hero", "Services"];
+const i18nNamespaces = ["Hero", "Services", "Common"];
 
 export default async function Home({ params: { locale } }) {
   const { resources } = await initTranslations(locale, i18nNamespaces);

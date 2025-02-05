@@ -6,10 +6,12 @@ import { MenuIcon } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
 import LanguageChanger from "./LanguangeChanger";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [sheetOpen, setSheetOpen] = useState(false);
   const pathname = usePathname();
+  const { t } = useTranslation();
   return (
     <header className="h-[50px] mt-5 mb-10">
       <div className="container flex items-center justify-between">
@@ -31,7 +33,7 @@ const Navbar = () => {
                 pathname === link.href ? "text-blue1" : ""
               }`}
             >
-              {link.title}
+              {t(link.title)}
             </Link>
           ))}
         </div>

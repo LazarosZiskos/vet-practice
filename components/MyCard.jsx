@@ -7,8 +7,10 @@ import {
   CardTitle,
 } from "./ui/card";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const MyCard = ({ title, description, style, icon, descStyle }) => {
+  const { t } = useTranslation();
   return (
     <>
       <Card className={`${style}`}>
@@ -24,7 +26,7 @@ const MyCard = ({ title, description, style, icon, descStyle }) => {
         <CardContent>
           <Link href="/services">
             <button className="font-bold text-sm hover:text-blue1 transition-all ease-in duration-150">
-              Περισσότερα
+              {t("perissotera")}
             </button>
           </Link>
         </CardContent>
