@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,16 +29,17 @@ const Services = () => {
     });
   }, []);
 
+  const { t } = useTranslation("Services");
+
   return (
     <div className="bg-gray2 pb-10 mt-[1000px] md:mt-[300px] lg:mt-[350px]">
       <div className="container" id="div2">
         <div className="pt-10 items-center justify-center flex flex-col">
           <h1 className="font-bold text-2xl lg:text-4xl pb-4 tracking-wider">
-            ΥΠΗΡΕΣΙΕΣ
+            {t("ypiresies")}
           </h1>
           <p className="text-center max-w-[450px] text-slate-400 text-sm leading-6">
-            Προσφέρουμε πληθώρα υπηρεσιών που καλύπτουν ολες τις ανάγκες του
-            κατοικιδίου σας.
+            {t("ypiresies-subheader")}
           </p>
         </div>
         <div
@@ -47,7 +49,7 @@ const Services = () => {
           <Card>
             <img src="dog1.jpg" alt="dog1" className="w-full" />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
-              Τοποθέτηση Micro-Chip
+              {t("ypiresies-title1")}
             </CardTitle>
             <CardDescription className="pb-5 pl-4 pr-4">
               Dignissim per dis dignissim mi nibh a parturient habitasse
@@ -57,7 +59,7 @@ const Services = () => {
           <Card>
             <img src="dog1.jpg" alt="dog1" className="w-full" />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
-              Γρήγορη Διάγνωση
+              {t("ypiresies-title2")}
             </CardTitle>
             <CardDescription className="pb-5 pl-4 pr-4">
               Dignissim per dis dignissim mi nibh a parturient habitasse
@@ -67,7 +69,7 @@ const Services = () => {
           <Card>
             <img src="dog1.jpg" alt="dog1" className="w-full" />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
-              Καλώπισμός Ζώου
+              {t("ypiresies-title3")}
             </CardTitle>
             <CardDescription className="pb-5 pl-4 pr-4">
               Dignissim per dis dignissim mi nibh a parturient habitasse
@@ -77,7 +79,7 @@ const Services = () => {
         </div>
         <div className="flex justify-start mt-10">
           <MyButton
-            title="Όλες οι υπηρεσίες"
+            title={t("ypiresies-button")}
             href="/services"
             style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1"
           />
