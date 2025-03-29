@@ -120,19 +120,24 @@ const About = () => {
             Η Κτηνίατρος Λίνα Ακακιάδου
           </h1>
           <p className="text-md">
-            <span className="text-red-500 font-bold">!!LINA BIO!!</span> Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Facere ad modi
-            repellat, labore dolorem amet hic, accusamus fugit esse est a.
-            Consequuntur quo amet magni tenetur obcaecati doloribus, et eos.
-            Omnis, beatae delectus tempore cumque quaerat praesentium amet sed
-            aperiam expedita temporibus placeat rerum error culpa magni
-            blanditiis quis eos aliquid repudiandae, suscipit dolores, repellat
-            itaque quas sint. Debitis, pariatur! Repellat qui reiciendis
-            expedita velit similique ratione exercitationem atque explicabo, ad
-            nemo rem blanditiis, omnis veniam, quis necessitatibus! Consectetur
-            reiciendis asperiores dolores molestias itaque nisi explicabo
-            consequatur id, harum pariatur? Consectetur voluptates labore soluta
-            corporis. Possimus ad non porro laboriosam
+            Η έμπειρη κτηνίατρος Λίνα Ακακιάδου είναι απόφοιτη του Αριστοτελείου
+            Πανεπιστημίου Θεσσαλονίκης. Με δεκαετή εμπειρία στην κτηνιατρική
+            επιστήμη. Επίσης είναι κάτοχος Μεταπτυχιακού Διπλώματος στην
+            Τεχνολογία Τροφίμων. Στο σύγχρονο και πλήρως εξοπλισμένο κτηνιατρείο
+            της, στη Νέα Καρβάλη Καβάλας, προσφέρει εξατομικευμένες υπηρεσίες
+            πρόληψης, διάγνωσης και θεραπείας, με γνώμονα την υγεία και την
+            ευζωία των ζώων συντροφιάς. Η αγάπη της για τα ζώα, η επιστημονική
+            της κατάρτιση και η συνεχής επιμόρφωσή της, την καθιστούν μια
+            αξιόπιστη επιλογή για κάθε υπεύθυνο κηδεμόνα.
+          </p>
+          <p className="text-md pt-4">
+            Με συνέπεια και ευαισθησία, αντιμετωπίζει κάθε περιστατικό με
+            επαγγελματισμό και ενσυναίσθηση, δημιουργώντας σχέσεις εμπιστοσύνης
+            με τους ιδιοκτήτες και τους μικρούς τους φίλους. Το κτηνιατρείο
+            λειτουργεί με υψηλά πρότυπα υγιεινής και τεχνολογίας, ενώ δίνεται
+            έμφαση στη σωστή ενημέρωση του ιδιοκτήτη για την πρόληψη και
+            φροντίδα των ζώων. Στόχος της είναι η παροχή ολοκληρωμένης
+            φροντίδας, σε ένα περιβάλλον φιλικό και ανθρώπινο.
           </p>
         </div>
         <div

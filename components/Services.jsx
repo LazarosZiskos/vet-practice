@@ -67,7 +67,7 @@ const Services = () => {
             </CardDescription>
           </Card>
           <Card>
-            <img src="dog1.jpg" alt="dog1" className="w-full" />
+            <img src="dog4.png" alt="dog4" className="w-full" />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title3")}
             </CardTitle>
