@@ -52,8 +52,7 @@ const Services = () => {
               {t("ypiresies-title1")}
             </CardTitle>
             <CardDescription className="pb-5 pl-4 pr-4">
-              Dignissim per dis dignissim mi nibh a parturient habitasse
-              suspendisse ut a feugiat morbi neque tortor.
+              {t("ypiresies-subtitle1")}
             </CardDescription>
           </Card>
           <Card>
@@ -62,8 +61,7 @@ const Services = () => {
               {t("ypiresies-title2")}
             </CardTitle>
             <CardDescription className="pb-5 pl-4 pr-4">
-              Dignissim per dis dignissim mi nibh a parturient habitasse
-              suspendisse ut a feugiat morbi neque tortor.
+              {t("ypiresies-subtitle2")}
             </CardDescription>
           </Card>
           <Card>
@@ -72,8 +70,7 @@ const Services = () => {
               {t("ypiresies-title3")}
             </CardTitle>
             <CardDescription className="pb-5 pl-4 pr-4">
-              Dignissim per dis dignissim mi nibh a parturient habitasse
-              suspendisse ut a feugiat morbi neque tortor.
+              {t("ypiresies-subtitle3")}
             </CardDescription>
           </Card>
         </div>

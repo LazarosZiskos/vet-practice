@@ -11,7 +11,7 @@ const Service = ({ title, subtitle, icon, id, href }) => {
         id={id}
       >
         <div className=" text-blue1">{icon}</div>
-        <h2 className="text-xl">{title}</h2>
+        <h2 className="text-xl text-center">{title}</h2>
         <p className="text-sm text-slate-400 max-w-[300px] text-center">
           {subtitle}
         </p>

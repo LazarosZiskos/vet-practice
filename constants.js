@@ -4,6 +4,8 @@ import { GiScalpel } from "react-icons/gi";
 import { TbDental } from "react-icons/tb";
 import { CiMedicalCross } from "react-icons/ci";
 import { PiBone } from "react-icons/pi";
+import { FaStethoscope } from "react-icons/fa";
+import { FaPassport } from "react-icons/fa6";
 
 export const navLinks = [
   {
@@ -87,7 +89,7 @@ export const services = [
     href: "/services/details",
   },
   {
-    title: "Διαγνωστικές Εξετάσεις",
+    title: "Εργαστηριακές εξετάσεις",
     subtitle: "Απαραίτητες για τη διαγνωστική προσέγγιση των ασθενειών",
     icon: <FaMicroscope size={100} />,
     href: "/services/details",
@@ -111,10 +113,28 @@ export const services = [
     href: "/services/details",
   },
   {
-    title: "Κλινικές Δίαιτες",
-    subtitle:
-      "Προτάσεις για την διατροφή του ζώου σας σε όλα τα στάδια της ζωής του",
+    title: "Παθολογικά Περιστατικά",
+    subtitle: "Η καθημερινή πρόκληση του ιατρείου μας είναι η διάγνωση",
+    icon: <FaStethoscope size={100} />,
+    href: "/services/details",
+  },
+  {
+    title: "Διατροφή και Κλινικές Δίαιτες",
+    subtitle: "Ολοκληρωμένη προσέγγιση για την υγεία του κατοικίδιού σας",
     icon: <PiBone size={100} />,
+    href: "/services/details",
+  },
+  {
+    title: "Αρχείο Πελατών και Ιστορικό Περιστατικών",
+    subtitle:
+      "Oργάνωση και η σωστή παρακολούθηση της υγείας του κατοικίδιού σας",
+    icon: <PiBone size={100} />,
+    href: "/services/details",
+  },
+  {
+    title: "Ταξίδια και Μεταφορές",
+    subtitle: "Έκδοση διαβατηρίου και συμβουλές για ταξίδια στο εξωτερικό",
+    icon: <FaPassport size={100} />,
     href: "/services/details",
   },
 ];
