@@ -6,10 +6,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useRef } from "react";
+import { use, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,17 +34,17 @@ const Space = () => {
     });
   }, []);
 
+  const { t } = useTranslation("Space");
+
   return (
     <section className="bg-gray2 pt-10 overflow-hidden">
       <div className="container" ref={scrollref}>
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">
-            Ο ΧΩΡΟΣ
+            {t("xoros")}
           </h1>
           <p className="text-center text-slate-400 leading-6 max-w-[700px]">
-            Το κτηνιατρείο βρίσκεται επί της κεντρικής οδού της Νέας Καρβάλης,
-            Καβάλας. Πρόκειται για ένα πλήρως εξοπλισμένο και καλαίσθητο
-            κτηνιατρείο.
+            {t("xoros-subtitle")}
           </p>
         </div>
         <div className="md:pb-10 md:pt-10 pl-5 pr-5">
