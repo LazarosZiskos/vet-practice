@@ -31,7 +31,7 @@ const About = () => {
       <div className="top-[60px]">
         <img
           className="w-full h-[30vh] object-cover pt-12"
-          src="bg-about.jpg"
+          src="/bg-about.jpg"
           alt="about-photo"
         />
         <div className="absolute justify-center items-center flex flex-col top-[100px] w-full h-[40vh]">
@@ -178,7 +178,7 @@ const About = () => {
           pb-5
         "
         >
-          <img src="doctor2.jpg" alt="lina-akakiadou" className="rounded-lg" />
+          <img src="/doctor2.jpg" alt="lina-akakiadou" className="rounded-lg" />
         </div>
       </div>
 
