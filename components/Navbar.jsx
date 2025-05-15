@@ -30,7 +30,7 @@ const Navbar = () => {
               key={index}
               href={link.href}
               className={`font-semibold transition-all ease-in-out duration-200 hover:text-blue1 ${
-                pathname === link.href ? "text-blue1" : ""
+                pathname.endsWith(link.href) ? "text-blue1" : ""
               }`}
             >
               {t(link.title)}
@@ -43,6 +43,13 @@ const Navbar = () => {
               <MenuIcon />
             </SheetTrigger>
             <SheetContent className="flex flex-col items-center justify-center w-[300px]">
+              <div className="flex items-start mt-[-300px]">
+                <img
+                  src="main_logo.jpg"
+                  alt="logo"
+                  className="w-[150px] mb-20"
+                />
+              </div>
               {navLinks.map((link, index) => (
                 <div key={index} className="pb-5">
                   <Link

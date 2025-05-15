@@ -46,14 +46,6 @@ export const navLinks = [
 // ];
 
 export const reviews = [
-  // {
-  //   title: "Εξαιρετική κτηνίατρος",
-  //   description:
-  //     "Εξαιρετική κτηνίατρος, με μεγάλη ευαισθησία απέναντι στα ζώα. Έδειξε μεγάλη αγάπη στον σκύλο μας. Τον έσωσε κυριολεκτικά βέβαιο θάνατο. Την ευχαριστούμε θερμά.",
-  //   name: "A.I.",
-  //   writer: "Aλέξανδρος Ιωσηφίδης",
-  //   town: "Καβάλα",
-  // },
   {
     title: "Το ευχαριστώ είναι λίγο",
     description:
@@ -63,12 +55,12 @@ export const reviews = [
     town: "Καβάλα",
   },
   {
-    title: "very good vet",
+    title: "Μια αξιόλογη κτηνίατρος",
     description:
-      "very good vet!! she cares for the well-being of pets more than money! she examined a stray pet for free to be able to help him! ☺️",
-    name: "M.Β.",
-    writer: "Mimi",
-    town: "Βουλγαρία",
+      "Μια αξιόλογη κτηνίατρος κι ένας υπέροχος άνθρωπος με αγάπη για τα ζώα και σεβασμό τόσο στα ζώα όσο και στους συνοδοιπόρους τους. Ο Χρήστος, η Θεοδώρα και κυρίως ο Μίσσα, σε ευχαριστούμε πολύ.",
+    name: "Χ.Τ.",
+    writer: "Χρήστος Τσίρκας",
+    town: "Ελλάδα",
   },
   {
     title: "The best vet I've seen",
