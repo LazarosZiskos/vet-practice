@@ -14,6 +14,8 @@ const i18nNamespaces = [
   "Doctor",
   "Space",
   "Questions",
+  "Testimonials",
+  "Footer",
 ];
 
 export default async function Home({ params: { locale } }) {

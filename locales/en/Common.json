@@ -1,9 +1,15 @@
 {
-    "nav": {
-      "home": "Home",
-      "about": "About Us",
-      "services": "Services",
-      "contact": "Contact"
-    }
-  }
-  
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+
+  "footer-item1": "Home",
+  "footer-item2": "About Us",
+  "footer-item3": "Services",
+  "footer-item4": "Communication",
+  "footer-subheader1": "We are always willing to serve you.\n",
+  "footer-subheader2": "and we will answer any questions you may have."
+}

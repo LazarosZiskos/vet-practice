@@ -1,3 +1,4 @@
+"use client";
 import {
   Facebook,
   Instagram,
@@ -9,8 +10,13 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "react-i18next";
+
+// {t("accordion-title")}
 
 const Footer = () => {
+  const { t } = useTranslation("Footer");
+
   return (
     <footer className="bg-gray1 pt-10 pb-10 ">
       <div className="container flex flex-col justify-center items-center md:flex-row md:space-x-20 lg:justify-between">
@@ -19,8 +25,9 @@ const Footer = () => {
             <img src="/main_logo.jpg" alt="logo" className="w-[150px]" />
           </Link>
           <p className="text-gray2/60 text-sm max-w-[350px] text-center">
-            Είμαστε πάντα πρόθυμοι να σας εξυπηρετήσουμε <br />
-            και να σας λύσουμε κάθε απορία.
+            {t("footer-subheader1")}
+            <br />
+            {t("footer-subheader2")}
           </p>
           <ul className="flex gap-2 text-white">
             <li>
@@ -50,27 +57,29 @@ const Footer = () => {
           <div className="flex flex-col justify-center items-start gap-2">
             <h3 className="text-xl pb-4 font-bold text-white">Menu</h3>
             <Link href="/" className="text-gray2/80 pb-1  hover:text-blue1">
-              Αρχική
+              {t("footer-item1")}
             </Link>
             <Link href="/about" className="text-gray2/80 pb-1 hover:text-blue1">
-              Σχετικά Με Εμάς
+              {t("footer-item2")}
             </Link>
             <Link
               href="/services"
               className="text-gray2/80 pb-1 hover:text-blue1"
             >
-              Υπηρεσίες
+              {t("footer-item3")}
             </Link>
             <Link
               href="/contact"
               className="text-gray2/80 pb-1 hover:text-blue1"
             >
-              Επικοινωνία
+              {t("footer-item4")}
             </Link>
           </div>
 
           <div className="flex flex-col gap-3 justify-center items-start">
-            <h3 className="text-xl pb-4 font-bold text-white">Επικοινωνία</h3>
+            <h3 className="text-xl pb-4 font-bold text-white">
+              {t("footer-item4")}
+            </h3>
             <a href="tel:2510371262">
               <p className="flex gap-4 items-center justify-center text-gray2/80">
                 <Phone size={20} /> <span>2510 317262</span>
@@ -103,7 +112,16 @@ const Footer = () => {
       <div className="flex flex-col justify-center items-center">
         <hr className="mt-5 mb-5 w-[80%] lg:w-[65%]" />
         <div className="text-center text-gray2/70 text-xs lg:text-sm">
-          © Copyright Lazaros Ziskos 2024
+          © Copyright Lina Akiadou 2025. All rights reserved.
+          <br />
+          Designed and developed by{" "}
+          <Link
+            className="text-blue1 pt-2"
+            href="https://lazaros-portfolio.vercel.app/"
+            target="blank"
+          >
+            Lazaros Ziskos
+          </Link>
         </div>
       </div>
     </footer>

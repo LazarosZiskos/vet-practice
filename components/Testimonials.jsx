@@ -5,6 +5,7 @@ import { reviews } from "@/constants";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,10 +29,12 @@ const Testimonials = () => {
     });
   }, []);
 
+  const { t } = useTranslation("Testimonials");
+
   return (
     <section className="pt-10 pb-10 container items-center" ref={scrollref}>
       <h1 className="font-bold text-2xl md:text-4xl mb-10 tracking-wider text-center">
-        ΑΞΙΟΛΟΓΗΣΕΙΣ
+        {t("testimonials-title")}
       </h1>
       <div className="flex flex-col items-center justify-center md:flex-row flex-wrap gap-4 ">
         {reviews.map((review, idx) => (

@@ -13,6 +13,8 @@ export const metadata = {
   description: "Κτηνιατρείο Λίνα Ακακιάδου - Υψηλές Υπηρεσίες Κτηνιατρείου",
 };
 
+// const i18nNamespaces = ["Footer"];
+
 async function Layout({ children, params: { locale } }) {
   // Fetch translations for the current locale
   const { resources } = await initTranslations(locale, ["Common"]);
