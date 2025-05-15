@@ -81,19 +81,25 @@ export default function ServicePage({ params }) {
         <div className="flex flex-col items-center justify-center gap-8">
           <div className="text-blue1 text-6xl">{service.icon}</div>
 
-          {service.subtitle2Key && (
-            <p className="text-center text-slate-400 text-lg max-w-[800px]">
-              {t(service.subtitle2Key)}
+          {service.subtitleKey && (
+            <p className="text-center text-slate-400 text-xl italic max-w-[800px]">
+              {t(service.subtitleKey)}
             </p>
           )}
 
           {(service.para1Key || service.para2Key) && (
-            <div className="w-full max-w-[800px] bg-slate-100 p-8 rounded-lg">
+            <div className="w-full max-w-[800px] p-2">
               {service.para1Key && (
-                <p className="text-slate-600 p-4">{t(service.para1Key)}</p>
+                <p className="text-slate-600 p-2">{t(service.para1Key)}</p>
               )}
               {service.para2Key && t(service.para2Key).trim() && (
-                <p className="text-slate-600 p-4">{t(service.para2Key)}</p>
+                <p className="text-slate-600 p-2">{t(service.para2Key)}</p>
+              )}
+              {service.para3Key && t(service.para3Key).trim() && (
+                <p className="text-slate-600 p-2">{t(service.para3Key)}</p>
+              )}
+              {service.para4Key && t(service.para4Key).trim() && (
+                <p className="text-slate-600 p-2">{t(service.para4Key)}</p>
               )}
             </div>
           )}

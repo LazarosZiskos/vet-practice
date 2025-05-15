@@ -52,14 +52,17 @@ const Navbar = () => {
                       pathname === link.href ? "text-blue1" : ""
                     }`}
                   >
-                    {link.title}
+                    {t(link.title)}
                   </Link>
                 </div>
               ))}
+              <LanguageChanger />
             </SheetContent>
           </Sheet>
         </div>
-        <LanguageChanger />
+        <div className="hidden md:flex">
+          <LanguageChanger />
+        </div>
       </div>
     </header>
   );

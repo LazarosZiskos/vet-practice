@@ -20,53 +20,81 @@
     "service1": {
       "title": "Preventive Care",
       "subtitle": "An annual veterinary check-up should be one of your top priorities",
-      "subtitle2": "Preventive veterinary care is key to maintaining your pet’s health.",
-      "para1": "Preventive veterinary care is the most effective strategy to ensure the health and wellbeing of your pets, offering them a long and happy life. The aim of prevention is to detect and avoid health problems before they develop into serious conditions that require urgent care — which can be stressful for your pet and costly for you.",
-      "para2": "Routine veterinary check-ups, timely vaccinations, and regular parasite control are essential to keeping pets healthy and protected. Our region’s climate makes parasite prevention crucial to avoid diseases like leishmaniasis, ehrlichiosis, and heartworm. Vaccination also protects against illnesses such as parvovirus and leptospirosis."
+      "subtitle2": "Preventive veterinary care is key to your pet’s long-term health.",
+      "para1": "Preventive veterinary care is the most effective strategy to keep your pets healthy and offer them a life of well-being. The goal of prevention is to detect and address health issues before they develop into serious conditions that require emergency treatment, causing stress to your pet and financial burden to you.",
+      "para2": "Routine checkups, proper vaccinations, and parasite control are essential to ensure that our pets remain healthy and protected. In our region, the prevailing climate makes parasite prevention critical. Timely vaccination also helps prevent diseases like parvovirus and leptospirosis.",
+      "para3": "Given our climate, preventive care against parasites is essential to avoid diseases like leishmaniasis, ehrlichiosis, and heartworm. Timely and proper vaccination also protects pets from infections like parvovirus, leptospirosis, etc.",
+      "para4": "This approach is part of holistic veterinary medicine. Internal and external parasite control is crucial for public health. Fleas, tick-borne diseases, and parasites like echinococcus pose real risks, and appropriate prevention contributes to the well-being of all.",
+      "para5": "Recognizing the importance of prevention, we invite you to schedule your pet’s next check-up and ensure they receive all necessary preventive care."
     },
     "service2": {
       "title": "Laboratory Tests",
       "subtitle": "Essential for diagnosing medical conditions",
-      "subtitle2": "Blood tests are critical in assessing overall health.",
-      "para1": "Hematological tests include checking organ function and screening for infectious diseases that are common in our region.",
-      "para2": "We conduct comprehensive bloodwork, including liver, kidney, and pancreas function, protein and electrolyte levels, as well as serological tests for transmissible diseases in dogs and cats. The specific tests are selected after consultation, based on each pet’s clinical picture and needs."
+      "subtitle2": "Blood tests are essential for assessing your pet’s health.",
+      "para1": "Lab tests are one of the most important ways to monitor your pet’s health. Through them, we can detect early signs of conditions that may not yet be apparent during a physical exam, thus avoiding the financial burden of chronic illnesses.",
+      "para2": "Lab work includes evaluating organ function and checking for infectious diseases, which are unfortunately quite common in our region.",
+      "para3": "Our clinic offers a wide range of lab tests aimed at rapid and accurate diagnosis of your pet’s condition.",
+      "para4": "We conduct full hematology and biochemistry panels to assess your pet’s overall health and detect potential issues. We also provide rapid serological tests for infectious diseases and collaborate with specialized labs for advanced diagnostics such as biopsies, cultures, and specific markers.",
+      "para5": "Lab tests are an effective way to provide the best care possible. If you’re concerned about your pet’s health or want a complete evaluation, contact us to schedule the necessary tests and ensure proper diagnosis and care."
     },
     "service3": {
       "title": "Surgical Procedures",
-      "subtitle": "Our clinic is equipped with modern surgical equipment",
-      "subtitle2": "We offer preventive, therapeutic, and diagnostic surgeries.",
-      "para1": "Each surgical procedure is preceded by a thorough pre-op exam, including bloodwork and ultrasound if needed. Anesthesia is personalized based on the pet’s health status, and vital signs are monitored continuously during surgery.",
-      "para2": "Post-operative care is clearly explained and tailored to your pet’s recovery. If needed, pets stay at the clinic for observation to ensure they leave safe and stabilized. We’re here to answer any concerns you may have about anesthesia or recovery."
+      "subtitle": "Safe and compassionate surgical care",
+      "subtitle2": "We perform preventive, therapeutic, and diagnostic surgeries.",
+      "para1": "Our clinic offers a full range of surgical services, from simple to advanced procedures. We’re fully equipped and structured to ensure your pet’s safety and comfort, from pre-operative screening to post-operative recovery.",
+      "para2": "Post-operative care is clear and tailored to your pet’s needs. Your pet will stay with us when necessary for stabilization and monitoring to ensure a safe recovery.",
+      "para3": "For more complex cases, we collaborate with specialized veterinary surgeons in orthopedics, soft tissue, and more to ensure the highest standard of surgical care and outcomes.",
+      "para4": ""
     },
     "service4": {
       "title": "Dental Care",
-      "subtitle": "Regular dental care is essential for your pet's health",
+      "subtitle": "Healthy teeth for healthy pets",
       "subtitle2": " ",
-      "para1": "We provide professional teeth cleaning, extractions, and treatment for feline stomatitis. Dental issues can increase bacterial load and cause significant pain, greatly reducing your pet’s quality of life.",
-      "para2": " "
+      "para1": "Oral health is just as important for pets as it is for people. Our clinic offers complete dental care using modern equipment for prevention and treatment of dental issues. From basic cleanings to complex procedures, we provide safe, effective care for your pet’s mouth.",
+      "para2": "If you notice bad breath, excessive drooling, or difficulty eating, contact us. Early diagnosis and treatment of dental issues can prevent serious complications.",
+      "para3": "",
+      "para4": ""
     },
     "service5": {
       "title": "Pharmacy",
-      "subtitle": "A fully stocked pharmacy is available at our clinic"
+      "subtitle": "Modern pharmacy with full range of veterinary products",
+      "para1": "Our clinic is equipped with a fully stocked pharmacy offering a wide selection of medications and veterinary supplies. From prescription drugs to daily care products, we ensure your pet has access to the most effective and up-to-date treatments.",
+      "para2": "Our team is here to guide you in the proper use of medications and provide personalized solutions. We carry everything needed for prevention, recovery, and support of your pet’s health.",
+      "para3": "",
+      "para4": ""
     },
     "service6": {
       "title": "Pathological Cases",
-      "subtitle": "Diagnosing complex cases is our clinic’s daily mission",
+      "subtitle": "Daily diagnostic and therapeutic challenges",
       "subtitle2": " ",
-      "para1": "Our goal is to create a clear and effective treatment plan that addresses your pet’s specific health needs while giving you peace of mind.",
-      "para2": " "
+      "para1": "We deal daily with medical cases that require immediate diagnosis and treatment. Symptoms like lethargy, vomiting, appetite changes, and unusual behavior are common reasons for visits. These cases are approached with expertise, empathy, and swift action.",
+      "para2": "Accurate diagnosis and individualized treatment are crucial to your pet’s recovery. Our experience allows us to identify and address health issues efficiently and effectively. We explain everything clearly and offer the most appropriate path to healing.",
+      "para3": "For us, solving these cases is not just a task — it’s our commitment to delivering excellent care and ensuring your pet’s well-being.",
+      "para4": ""
     },
     "service7": {
       "title": "Nutrition & Clinical Diets",
-      "subtitle": "A holistic approach to your pet’s health through nutrition"
+      "subtitle": "Comprehensive approach to pet health through nutrition",
+      "para1": "We don’t just offer medical care — we also provide a full range of nutritional solutions. Our clinic stocks specialized foods and clinical diets tailored to every stage of your pet’s life, every medical need, and every activity level.",
+      "para2": "Whether your pet needs weight control, liver or kidney support, or sensitive digestion formulas, we provide high-quality options selected specifically for individual needs. Proper nutrition is vital for preventing, managing, and maintaining overall health.",
+      "para3": "With our guidance, you’ll find the ideal diet to give your pet the best possible care and quality of life.",
+      "para4": ""
     },
     "service8": {
       "title": "Client Records & Medical History",
-      "subtitle": "Accurate tracking of your pet’s health and care history"
+      "subtitle": "Organized care with a personal touch",
+      "para1": "At our clinic, maintaining thorough and organized records is a top priority. We keep detailed client and patient files to monitor your pet’s health over time and tailor treatments and recommendations accordingly.",
+      "para2": "We also offer appointment reminders to ensure no visit or treatment is missed. With your permission, we’ll notify you of upcoming appointments to make care easier and more consistent.",
+      "para3": "",
+      "para4": ""
     },
     "service9": {
       "title": "Travel & Transportation",
-      "subtitle": "Pet passport issuance and travel advice for abroad"
+      "subtitle": "Passport issuance and travel guidance for your pet",
+      "para1": "We provide passport issuance services to prepare your pet for international travel. We ensure all health certificates, vaccinations, and microchipping requirements are met so your pet can travel safely and legally.",
+      "para2": "We also offer expert guidance regarding travel regulations for different countries — including vaccine requirements, tests, and entry conditions — so that your journey is smooth and compliant. Our team is here to support every step of the preparation.",
+      "para3": "",
+      "para4": ""
     }
   }
 }
