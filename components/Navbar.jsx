@@ -56,7 +56,7 @@ const Navbar = () => {
                   </Link>
                 </div>
               ))}
-              <LanguageChanger />
+              <LanguageChanger closeSheet={() => setSheetOpen(false)} />
             </SheetContent>
           </Sheet>
         </div>

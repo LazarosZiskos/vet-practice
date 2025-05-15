@@ -1,69 +1,104 @@
 "use client";
 
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useRouter, usePathname } from "next/navigation";
 import i18nConfig from "@/i18nConfig";
 
-import { Button } from "@/components/ui/button";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-
-export default function LanguageChanger() {
+export default function LanguageChanger({ closeSheet }) {
   const { i18n } = useTranslation();
   const currentLocale = i18n.language;
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleLocaleChange = (newLocale) => {
-    const days = 30;
-    const date = new Date();
-    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-    const expires = date.toUTCString();
-    document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
+  // Close dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
+  const handleLocaleChange = (newLocale) => {
+    if (newLocale === currentLocale) {
+      setIsOpen(false);
+      if (closeSheet) closeSheet();
+      return;
+    }
+
+    // Update language
     i18n.changeLanguage(newLocale);
 
+    // Set cookie
+    const expires = new Date(Date.now() + 30 * 864e5).toUTCString(); // 30 days
+    document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
+
+    // Build new path
     const defaultLocale = i18nConfig.defaultLocale;
     const prefixDefault = i18nConfig.prefixDefault;
 
+    let newPath = pathname;
+
     if (currentLocale === defaultLocale && !prefixDefault) {
-      router.push(`/${newLocale}${pathname}`);
+      newPath = `/${newLocale}${pathname}`;
     } else {
-      router.push(pathname.replace(`/${currentLocale}`, `/${newLocale}`));
+      newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`);
     }
+
+    router.push(newPath);
+    setIsOpen(false);
+    if (closeSheet) closeSheet();
   };
 
   return (
-    <Popover>
-      <PopoverTrigger asChild>
-        <Button variant="outline" className="w-32 justify-center gap-2">
-          {currentLocale === "el" ? "🇬🇷 Ελληνικά" : "🇬🇧 English"}
-        </Button>
-      </PopoverTrigger>
-      <PopoverContent className="w-40 mt-1 text-sm">
-        <div className="flex flex-col gap-2">
-          <button
-            onClick={() => handleLocaleChange("en")}
-            className={`flex items-center gap-2 hover:text-blue-500 ${
-              currentLocale === "en" ? "font-semibold" : ""
-            }`}
-          >
-            🇬🇧 English
-          </button>
-          <button
-            onClick={() => handleLocaleChange("el")}
-            className={`flex items-center gap-2 hover:text-blue-500 ${
-              currentLocale === "el" ? "font-semibold" : ""
-            }`}
-          >
-            🇬🇷 Ελληνικά
-          </button>
+    <div className="relative inline-block text-left" ref={dropdownRef}>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-32 px-4 py-2 text-sm font-medium border rounded-md bg-white shadow-sm hover:bg-gray-100 focus:outline-none flex items-center justify-center gap-2"
+      >
+        {currentLocale === "el" ? "🇬🇷 " : "🇬🇧 "}
+        <svg
+          className={`w-4 h-4 transition-transform ${
+            isOpen ? "rotate-180" : ""
+          }`}
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path fillRule="evenodd" d="M10 12l-4-4h8l-4 4z" clipRule="evenodd" />
+        </svg>
+      </button>
+
+      {isOpen && (
+        <div className="absolute z-50 mt-2 w-32 bg-white border rounded-md shadow-lg">
+          <ul className="text-sm">
+            <li>
+              <button
+                onClick={() => handleLocaleChange("el")}
+                className={`w-full text-left px-4 py-2 hover:bg-gray-100 flex items-center gap-2 ${
+                  currentLocale === "el" ? "font-semibold text-blue-600" : ""
+                }`}
+              >
+                🇬🇷 Ελληνικά
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleLocaleChange("en")}
+                className={`w-full text-left px-4 py-2 hover:bg-gray-100 flex items-center gap-2 ${
+                  currentLocale === "en" ? "font-semibold text-blue-600" : ""
+                }`}
+              >
+                🇬🇧 English
+              </button>
+            </li>
+          </ul>
         </div>
-      </PopoverContent>
-    </Popover>
+      )}
+    </div>
   );
 }
