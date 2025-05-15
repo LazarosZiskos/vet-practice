@@ -10,6 +10,7 @@ import {
 import { detailServices } from "@/constants";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useTranslation } from "react-i18next";
 
 const ServiceDetails = () => {
   useGSAP(() => {
@@ -20,6 +21,9 @@ const ServiceDetails = () => {
       duration: 0.7,
     });
   }, []);
+
+  const { t } = useTranslation("");
+
   return (
     <section>
       <div className="top-[60px]">
@@ -38,7 +42,7 @@ const ServiceDetails = () => {
                       href="/"
                       className="hover:text-blue1 transition-all ease-in-out duration-200 font-bold text-xs md:text-sm"
                     >
-                      Αρχική
+                      {t("breadcrumb1")}
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="font-bold" />

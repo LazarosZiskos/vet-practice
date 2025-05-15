@@ -11,5 +11,62 @@
   "footer-item3": "Services",
   "footer-item4": "Communication",
   "footer-subheader1": "We are always willing to serve you.\n",
-  "footer-subheader2": "and we will answer any questions you may have."
+  "footer-subheader2": "and we will answer any questions you may have.",
+  "breadcrumb1": "Home",
+  "breadcrumb2": "About Us",
+  "breadcrumb3": "Services",
+
+  "services": {
+    "service1": {
+      "title": "Preventive Care",
+      "subtitle": "An annual veterinary check-up should be one of your top priorities",
+      "subtitle2": "Preventive veterinary care is key to maintaining your pet’s health.",
+      "para1": "Preventive veterinary care is the most effective strategy to ensure the health and wellbeing of your pets, offering them a long and happy life. The aim of prevention is to detect and avoid health problems before they develop into serious conditions that require urgent care — which can be stressful for your pet and costly for you.",
+      "para2": "Routine veterinary check-ups, timely vaccinations, and regular parasite control are essential to keeping pets healthy and protected. Our region’s climate makes parasite prevention crucial to avoid diseases like leishmaniasis, ehrlichiosis, and heartworm. Vaccination also protects against illnesses such as parvovirus and leptospirosis."
+    },
+    "service2": {
+      "title": "Laboratory Tests",
+      "subtitle": "Essential for diagnosing medical conditions",
+      "subtitle2": "Blood tests are critical in assessing overall health.",
+      "para1": "Hematological tests include checking organ function and screening for infectious diseases that are common in our region.",
+      "para2": "We conduct comprehensive bloodwork, including liver, kidney, and pancreas function, protein and electrolyte levels, as well as serological tests for transmissible diseases in dogs and cats. The specific tests are selected after consultation, based on each pet’s clinical picture and needs."
+    },
+    "service3": {
+      "title": "Surgical Procedures",
+      "subtitle": "Our clinic is equipped with modern surgical equipment",
+      "subtitle2": "We offer preventive, therapeutic, and diagnostic surgeries.",
+      "para1": "Each surgical procedure is preceded by a thorough pre-op exam, including bloodwork and ultrasound if needed. Anesthesia is personalized based on the pet’s health status, and vital signs are monitored continuously during surgery.",
+      "para2": "Post-operative care is clearly explained and tailored to your pet’s recovery. If needed, pets stay at the clinic for observation to ensure they leave safe and stabilized. We’re here to answer any concerns you may have about anesthesia or recovery."
+    },
+    "service4": {
+      "title": "Dental Care",
+      "subtitle": "Regular dental care is essential for your pet's health",
+      "subtitle2": " ",
+      "para1": "We provide professional teeth cleaning, extractions, and treatment for feline stomatitis. Dental issues can increase bacterial load and cause significant pain, greatly reducing your pet’s quality of life.",
+      "para2": " "
+    },
+    "service5": {
+      "title": "Pharmacy",
+      "subtitle": "A fully stocked pharmacy is available at our clinic"
+    },
+    "service6": {
+      "title": "Pathological Cases",
+      "subtitle": "Diagnosing complex cases is our clinic’s daily mission",
+      "subtitle2": " ",
+      "para1": "Our goal is to create a clear and effective treatment plan that addresses your pet’s specific health needs while giving you peace of mind.",
+      "para2": " "
+    },
+    "service7": {
+      "title": "Nutrition & Clinical Diets",
+      "subtitle": "A holistic approach to your pet’s health through nutrition"
+    },
+    "service8": {
+      "title": "Client Records & Medical History",
+      "subtitle": "Accurate tracking of your pet’s health and care history"
+    },
+    "service9": {
+      "title": "Travel & Transportation",
+      "subtitle": "Pet passport issuance and travel advice for abroad"
+    }
+  }
 }

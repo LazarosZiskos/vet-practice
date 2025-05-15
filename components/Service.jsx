@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
-const Service = ({ title, subtitle, icon, id, href }) => {
+const Service = ({ titleKey, subtitleKey, icon, id, href }) => {
+  const { t } = useTranslation("Servicepage");
+
   return (
     <Link
       href={href}
@@ -10,10 +13,10 @@ const Service = ({ title, subtitle, icon, id, href }) => {
         className="flex flex-col items-center justify-center gap-4 pb-10"
         id={id}
       >
-        <div className=" text-blue1">{icon}</div>
-        <h2 className="text-xl text-center">{title}</h2>
+        <div className="text-blue1">{icon}</div>
+        <h2 className="text-xl text-center">{t(titleKey)}</h2>
         <p className="text-sm text-slate-400 max-w-[300px] text-center">
-          {subtitle}
+          {t(subtitleKey)}
         </p>
       </div>
     </Link>

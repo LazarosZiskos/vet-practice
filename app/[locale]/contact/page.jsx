@@ -73,7 +73,7 @@ const Contact = () => {
                       href="/"
                       className="hover:text-blue1 transition-all ease-in-out duration-200 font-bold text-xs md:text-sm"
                     >
-                      Αρχική
+                      {t("breadcrumb1")}
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="font-bold" />

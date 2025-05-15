@@ -1,4 +1,5 @@
 "use client";
+
 import { services } from "@/constants";
 import {
   Breadcrumb,
@@ -10,9 +11,11 @@ import {
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { notFound } from "next/navigation";
+import { useTranslation } from "react-i18next";
 
-const ServicePage = ({ params }) => {
-  const { id } = params;
+export default function ServicePage({ params }) {
+  const { id, locale } = params; // ✅ You now get both from the dynamic route
+
   const service = services.find((s) => s.id === id);
 
   if (!service) {
@@ -27,6 +30,8 @@ const ServicePage = ({ params }) => {
       duration: 1,
     });
   }, []);
+
+  const { t } = useTranslation("Servicepage");
 
   return (
     <section>
@@ -43,33 +48,30 @@ const ServicePage = ({ params }) => {
                 <BreadcrumbList className="text-white">
                   <BreadcrumbItem>
                     <BreadcrumbLink
-                      href="/"
+                      href={`/${locale}`}
                       className="hover:text-blue1 transition-all ease-in-out duration-200 font-bold text-xs md:text-sm"
                     >
-                      Αρχική
+                      {t("breadcrumb1")}
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="font-bold" />
                   <BreadcrumbItem>
                     <BreadcrumbLink
-                      href="/services"
+                      href={`/${locale}/services`}
                       className="hover:text-blue1 transition-all ease-in-out duration-200 font-bold text-xs md:text-sm"
                     >
-                      Υπηρεσίες
+                      {t("breadcrumb3")}
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="font-bold" />
                   <BreadcrumbItem className="font-bold text-xs md:text-sm">
-                    {service.title}
+                    {t(service.titleKey)}
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
             </div>
-            <h1
-              className="text-white font-bold leading-1 text-2xl tracking-wider pb-4 max-w-[300px]
-            md:text-4xl md:max-w-[500px] md:pb-10"
-            >
-              {service.title}
+            <h1 className="text-white font-bold text-2xl md:text-4xl tracking-wider pb-4 md:pb-10 max-w-[500px]">
+              {t(service.titleKey)}
             </h1>
           </div>
         </div>
@@ -78,18 +80,25 @@ const ServicePage = ({ params }) => {
       <div className="container pt-10 pb-10" id="service-content">
         <div className="flex flex-col items-center justify-center gap-8">
           <div className="text-blue1 text-6xl">{service.icon}</div>
-          <p className="text-center text-slate-400 text-lg max-w-[800px]">
-            {service.subtitle2}
-          </p>
-          <div className="w-full max-w-[800px] bg-slate-100 p-8 rounded-lg">
-            {/* <h2 className="text-2xl font-bold mb-4">Σχετικά με την Υπηρεσία</h2> */}
-            <p className="text-slate-600 p-4">{service.para1}</p>
-            <p className="text-slate-600 p-4">{service.para2}</p>
-          </div>
+
+          {service.subtitle2Key && (
+            <p className="text-center text-slate-400 text-lg max-w-[800px]">
+              {t(service.subtitle2Key)}
+            </p>
+          )}
+
+          {(service.para1Key || service.para2Key) && (
+            <div className="w-full max-w-[800px] bg-slate-100 p-8 rounded-lg">
+              {service.para1Key && (
+                <p className="text-slate-600 p-4">{t(service.para1Key)}</p>
+              )}
+              {service.para2Key && t(service.para2Key).trim() && (
+                <p className="text-slate-600 p-4">{t(service.para2Key)}</p>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </section>
   );
-};
-
-export default ServicePage;
+}

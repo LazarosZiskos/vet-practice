@@ -21,6 +21,7 @@ async function Layout({ children, params: { locale } }) {
     "Common",
     "Aboutpage",
     "Contactpage",
+    "Servicepage",
   ]);
 
   return (

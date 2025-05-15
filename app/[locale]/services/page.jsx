@@ -10,8 +10,11 @@ import {
 import { services } from "@/constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useTranslation } from "react-i18next";
+import { useParams } from "next/navigation";
 
 const Services = () => {
+  const { locale } = useParams();
   useGSAP(() => {
     gsap.from("#div2", {
       opacity: 0,
@@ -21,6 +24,9 @@ const Services = () => {
       stagger: 0.3,
     });
   }, []);
+
+  const { t } = useTranslation("Servicepage");
+
   return (
     <section>
       <div className="top-[60px]">
@@ -39,12 +45,12 @@ const Services = () => {
                       href="/"
                       className="hover:text-blue1 transition-all ease-in-out duration-200 font-bold text-xs md:text-sm"
                     >
-                      Αρχική
+                      {t("breadcrumb1")}
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="font-bold" />
                   <BreadcrumbItem className="font-bold text-xs md:text-sm">
-                    Υπηρεσίες
+                    {t("servicepage-title")}
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
@@ -53,7 +59,7 @@ const Services = () => {
               className="text-white font-bold leading-1 text-2xl tracking-wider pb-4 max-w-[300px]
             md:text-4xl md:max-w-[500px] md:pb-10"
             >
-              Υπηρεσίες
+              {t("servicepage-title")}
             </h1>
           </div>
         </div>
@@ -62,22 +68,18 @@ const Services = () => {
       <div className="container pt-10 pb-10" id="div2">
         <div>
           <h2 className="text-center mx-auto text-slate-400 text-sm md:text-md lg:w-[1000px]">
-            Οι υπηρεσίες που παρέχονται στο κτηνιατρείο που διατηρεί στην Νέα
-            Καρβάλη Καβάλας η κτηνίατρος Λίνα Ακακιάδου διακρίνονται για το
-            υψηλό τους επίπεδο και παρέχονται με ευθύνη και ευαισθησία απέναντι
-            στο κατοικίδιό σας. Πιο αναλυτικά, στις υπηρεσίες που προσφέρουμε
-            στους μικρούς μας φίλους συμπεριλαμβάνονται οι παρακάτω:
+            {t("servicepage-subtitle")}
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center pt-20">
           {services.map((service, index) => (
             <Service
-              title={service.title}
-              subtitle={service.subtitle}
-              icon={service.icon}
               key={index}
-              id="div2"
-              href={service.href}
+              titleKey={service.titleKey}
+              subtitleKey={service.subtitleKey}
+              icon={service.icon}
+              id={service.id}
+              href={`/${locale}/services/${service.id}`}
             />
           ))}
         </div>
