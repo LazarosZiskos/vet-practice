@@ -17,7 +17,7 @@ export const metadata = {
 
 async function Layout({ children, params: { locale } }) {
   // Fetch translations for the current locale
-  const { resources } = await initTranslations(locale, ["Common"]);
+  const { resources } = await initTranslations(locale, ["Common", "Aboutpage"]);
 
   return (
     <html lang={locale}>

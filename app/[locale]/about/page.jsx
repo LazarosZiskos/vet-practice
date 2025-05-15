@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   useGSAP(() => {
@@ -26,6 +27,9 @@ const About = () => {
       stagger: 0.5,
     });
   }, []);
+
+  const { t } = useTranslation("Aboutpage");
+
   return (
     <section>
       <div className="top-[60px]">
@@ -58,7 +62,7 @@ const About = () => {
               className="text-white font-bold leading-1 text-2xl tracking-wider pb-4 max-w-[300px]
             md:text-4xl md:max-w-[500px] md:pb-10"
             >
-              Σχετικά με Εμάς
+              {t("aboutus-title")}
             </h1>
           </div>
         </div>
@@ -67,25 +71,23 @@ const About = () => {
       <div className="bg-gray2 pt-10 pb-10" id="trigger">
         <div className="container flex flex-col items-center justify-center md:flex-row">
           <div className="flex flex-col items-center md:items-start justify-center w-full md:w-1/2">
-            <h1 className="text-2xl md:text-3xl font-bold">Τι κάνουμε</h1>
+            <h1 className="text-2xl md:text-3xl font-bold">
+              {t("aboutus-title")}
+            </h1>
             <div className="max-w-[600px]">
               <p className="pt-10 text-gray1/70 text-md">
-                Στο κτηνιατρείο μας παρέχουμε υπεύθυνη, εξατομικευμένη φροντίδα
-                σε κάθε κατοικίδιο, με{" "}
-                <span className="text-blue1">σεβασμό</span>,{" "}
-                <span className="text-blue1">αγάπη</span> και{" "}
-                <span className="text-blue1">υψηλό επαγγελματισμό.</span>
+                {t("aboutus-text1")}{" "}
+                <span className="text-blue1"> {t("aboutus-keyword1")}</span>,{" "}
+                <span className="text-blue1"> {t("aboutus-keyword2")}</span>{" "}
+                {t("aboutus-and")}{" "}
+                <span className="text-blue1"> {t("aboutus-keyword3")}.</span>
                 <br />
-                <p className="pt-2">
-                  Πιστεύουμε σε μια ουσιαστική σχέση εμπιστοσύνης με κάθε
-                  ιδιοκτήτη, γιατί μόνο μέσα από συνεργασία μπορούμε να
-                  προσφέρουμε στο ζώο σας τη φροντίδα που του αξίζει.
-                </p>
+                <p className="pt-2">{t("aboutus-text2")}</p>
                 <br />
-                Με θετική διάθεση και πάθος για τη δουλειά μας, είμαστε δίπλα
-                σας σε κάθε βήμα – για να παραμένει το κατοικίδιό σας{" "}
-                <span className="text-blue1">υγιες</span> και
-                <span className="text-blue1">ευτυχισμένο.</span>
+                {t("aboutus-text3")}{" "}
+                <span className="text-blue1">{t("aboutus-keyword4")}</span>{" "}
+                {t("aboutus-and")}{" "}
+                <span className="text-blue1">{t("aboutus-keyword5")}.</span>
               </p>
             </div>
             {/* <ul className="list-disc pt-5 text-gray1/70 text-sm md:text-md space-y-2 ">
@@ -98,42 +100,32 @@ const About = () => {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-md border-2 p-5 md:p-8 border-b-0 border-slate-200  hover:text-blue1 transition-all ease-out duration-250 font-bold">
-                  1. Ο Στόχος Μας.
+                  1. {t("aboutus-value1")}.
                 </AccordionTrigger>
                 <AccordionContent className="border-2 p-5 border-t-0 md:p-8 md:pt-2 border-slate-200 text-slate-500">
-                  Να προσφέρουμε εξατομικευμένη κτηνιατρική φροντίδα υψηλού
-                  επιπέδου, ώστε κάθε ζώο να απολαμβάνει υγεία, ευζωία και
-                  ποιότητα ζωής, και κάθε ιδιοκτήτης να νιώθει υποστήριξη και
-                  σιγουριά.
+                  {t("aboutus-answer1")}
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="text-md border-2 p-5 md:p-8 border-b-0 border-slate-200 hover:text-blue1 transition-all ease-out duration-250 font-bold">
-                  2. Οι Aξίες Μας.
+                  2. {t("aboutus-value2")}.
                 </AccordionTrigger>
                 <AccordionContent className="border-2 p-5 md:p-8 md:pt-2 border-t-0 border-slate-200 text-slate-500">
                   <ul className="list-disc space-y-2">
-                    <li>Σεβασμός προς τα ζώα και τους κηδεμόνες τους</li>
-                    <li>Ειλικρίνεια και ανοιχτή επικοινωνία</li>
-                    <li>Επαγγελματισμός με συνεχή εκπαίδευση</li>
-                    <li>
-                      Ενσυναίσθηση, γιατί κάθε ζώο είναι μέλος μιας οικογένειας{" "}
-                    </li>
-                    <li>
-                      Ομαδικότητα, γιατί η συνεργασία φέρνει καλύτερα
-                      αποτελέσματα{" "}
-                    </li>
+                    <li>{t("aboutus-answer2a")}</li>
+                    <li>{t("aboutus-answer2b")}</li>
+                    <li>{t("aboutus-answer2c")}</li>
+                    <li>{t("aboutus-answer2d")} </li>
+                    <li>{t("aboutus-answer2e")} </li>
                   </ul>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger className="text-md border-2 p-5 md:p-8 border-b-0 border-slate-200  hover:text-blue1 transition-all ease-out duration-250 font-bold">
-                  3. Η Δέσμευσή Μας.
+                  3. {t("aboutus-value3")}.
                 </AccordionTrigger>
                 <AccordionContent className="border-2 p-5 md:p-8 border-t-0 md:pt-2 border-slate-200 text-slate-500">
-                  Δεσμευόμαστε να είμαστε πάντα δίπλα σας- με συνέπεια,
-                  υπευθυνότητα και αγάπη- για να εξασφαλίσουμε την υγεία, την
-                  ευημερία και την ευτυχία του αγαπημένου σας κατοικίδιου.
+                  {t("aboutus-answer3")}
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -147,29 +139,11 @@ const About = () => {
       >
         <div className="w-full md:w-1/2">
           <h1 className="text-2xl md:text-3xl font-bold pb-10 text-center md:text-start">
-            Η Κτηνίατρος Λίνα Ακακιάδου
+            {t("aboutus-vet")}
           </h1>
-          <p className="text-md">
-            Η Λίνα Ακακιάδου είναι κτηνίατρος, απόφοιτος της Κτηνιατρικής Σχολής
-            του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης, όπου ολοκλήρωσε τις
-            σπουδές της το 2010. Μετά την αποφοίτησή της, συνέχισε τις
-            μεταπτυχιακές σπουδές της στο ΑΤΕΙ Θεσσαλονίκης.
-          </p>
-          <p className="text-md pt-4">
-            Από το 2013 έως το 2020, εργάστηκε σε διάφορα κτηνιατρεία στη
-            Θεσσαλονίκη, αποκτώντας πολύτιμη εμπειρία στη διάγνωση και θεραπεία
-            παθήσεων, καθώς και στην καθημερινή φροντίδα των ζώων. Η αγάπη της
-            για τα ζώα, την δημόσια υγεία, το συνάνθρωπο και τον τόπο που
-            μεγάλωσε, την οδήγησαν να ανοίξει το δικό της ιατρείο μικρών ζώων το
-            2022 στη Νέα Καρβάλη Καβάλας.
-          </p>
-          <p className="text-md pt-4">
-            Η Λίνα Ακακιάδου είναι σύζυγος του στρατιωτικού κτηνιάτρου
-            Κωνσταντίνου Ηλιόπουλου και μητέρα δυο παιδιών. Στο προσωπικό της
-            και επαγγελματικό έργο, συνδυάζει την επιστημονική κατάρτιση με την
-            αγάπη για τα ζώα και την προσήλωση στην ποιότητα των υπηρεσιών που
-            προσφέρει στους αγαπημένους μας τετράποδους φίλους.
-          </p>
+          <p className="text-md">{t("aboutus-vet1")}</p>
+          <p className="text-md pt-4">{t("aboutus-vet2")}</p>
+          <p className="text-md pt-4">{t("aboutus-vet3")}</p>
         </div>
         <div
           className="pt-10
@@ -185,22 +159,16 @@ const About = () => {
       <div className="bg-gray2 pt-10 pb-10" id="trigger">
         <div className="container mx-auto w-[400px] lg:w-[600px]">
           <div className="flex flex-col justify-center items-center bg-gray1 text-slate-400 p-5">
-            <p>
-              Η συνεχιζόμενη επιστημονική κατάρτιση και το αίσθημα ευθύνης
-              απέναντι στο ζώο και τον ιδιοκτήτη αποτελούν τους κύριους
-              παράγοντες που διασφαλίζουν την ποιότητα των υπηρεσιών που παρέχει
-              η κτηνίατρος Λίνα Ακακιάδου στο ιατρείο της στην Νέα Καρβάλη
-              Καβάλας.
-            </p>
+            <p>{t("aboutus-timetable")}</p>
             <div className="pt-4 flex justify-between items-start text-white w-full">
               <div>
-                <h2>Δευτέρα </h2>
-                <h2>Τρίτη </h2>
-                <h2>Τετάρτη </h2>
-                <h2>Πέμπτη</h2>
-                <h2>Παρασκευή </h2>
-                <h2>Σάββατο </h2>
-                <h2>Κυριακή </h2>
+                <h2>{t("aboutus-monday")} </h2>
+                <h2>{t("aboutus-tuesday")} </h2>
+                <h2>{t("aboutus-wednesday")} </h2>
+                <h2>{t("aboutus-thursday")}</h2>
+                <h2>{t("aboutus-friday")} </h2>
+                <h2>{t("aboutus-saturday")} </h2>
+                <h2>{t("aboutus-sunday")} </h2>
               </div>
               <div>
                 <h2>09:00-14:00 </h2>
@@ -209,13 +177,13 @@ const About = () => {
                 <h2>09:00-14:00 & 17:00-21:00</h2>
                 <h2>09:00-14:00 & 17:00-21:00</h2>
                 <h2>10:00-14:00</h2>
-                <h2>ΚΛΕΙΣΤΑ</h2>
+                <h2>{t("aboutus-closed")}</h2>
               </div>
             </div>
             <div className="pt-5 w-full">
               <MyButton
                 href="/contact"
-                title="ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ"
+                title={t("aboutus-button")}
                 style="text-blue1 bg-white border border-white hover:bg-transparent
               hover:text-white w-full"
               />
