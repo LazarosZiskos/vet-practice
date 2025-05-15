@@ -40,7 +40,6 @@ export default function LanguageChanger() {
     <select onChange={handleChange} value={currentLocale}>
       <option value="el">Greek</option>
       <option value="en">English</option>
-      <option value="tr">Turkish</option>
     </select>
   );
 }
