@@ -47,7 +47,11 @@ const Services = () => {
           ref={scrollref}
         >
           <Card>
-            <img src="dog3.png" alt="dog1" className="w-full" />
+            <img
+              src="cat1.png"
+              alt="dog1"
+              className="w-full h-[310px] object-cover "
+            />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title1")}
             </CardTitle>
@@ -56,7 +60,11 @@ const Services = () => {
             </CardDescription>
           </Card>
           <Card>
-            <img src="cat1.png" alt="cat1" className="w-full" />
+            <img
+              src="cat23.jpg"
+              alt="cat1"
+              className="w-full h-[310px] object-cover "
+            />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title2")}
             </CardTitle>
@@ -65,7 +73,11 @@ const Services = () => {
             </CardDescription>
           </Card>
           <Card>
-            <img src="dog4.png" alt="dog4" className="w-full" />
+            <img
+              src="dog-surgery3.jpg"
+              alt="dog4"
+              className="w-full h-[310px] object-cover"
+            />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title3")}
             </CardTitle>
