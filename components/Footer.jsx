@@ -80,7 +80,7 @@ const Footer = () => {
             <h3 className="text-xl pb-4 font-bold text-white">
               {t("footer-item4")}
             </h3>
-            <a href="tel:2510371262">
+            <a href="tel:2510317262">
               <p className="flex gap-4 items-center justify-center text-gray2/80">
                 <Phone size={20} /> <span>2510 317262</span>
               </p>

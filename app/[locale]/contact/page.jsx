@@ -123,16 +123,16 @@ const Contact = () => {
             id="trigger"
           >
             <Link
-              href="tel:2510371262"
+              href="tel:2510317262"
               target="blank"
               className="flex flex-col justify-center items-center"
             >
               <FaPhone size={50} className="text-gray1 pb-2" />
               <h2 className="text-2xl">{t("contactpage-phone")}</h2>
             </Link>
-            <p className="text-slate-400">2510 371262</p>
+            <p className="text-slate-400">2510 317262</p>
             <MyButton
-              href="tel:2510371262"
+              href="tel:2510317262"
               title={t("contactpage-call")}
               style="text-blue1 bg-transparent hover:scale-125"
               target="blank"

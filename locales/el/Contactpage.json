@@ -1,1 +1,15 @@
-{"contactpage-address":"Διεύθυνση","contactpage-call":"Καλέστε μας","contactpage-directions":"Οδηγίες","contactpage-formsubtitle":"Για επείγοντα περιστατικά παρακαλώ καλέστε στο 2510371262 ή στο","contactpage-formtitle":"Μην διστάσετε να επικοινωνήσετε μαζί μας","contactpage-mobile":"Κινητό Τηλέφωνο","contactpage-phone":"Τηλέφωνο","contactpage-placeholder3":"Μήνυμα...","contactpage-placehorder1":"Όνομα","contactpage-result1":"ΑΠΟΣΤΟΛΗ","contactpage-result2":"Το μήνυμα σας έχει αποσταλεί!","contactpage-send":"Στείλτε μας email","contactpage-title":"Επικοινωνία"}
+{
+  "contactpage-address": "Διεύθυνση",
+  "contactpage-call": "Καλέστε μας",
+  "contactpage-directions": "Οδηγίες",
+  "contactpage-formsubtitle": "Για επείγοντα περιστατικά παρακαλώ καλέστε στο 2510317262 ή στο",
+  "contactpage-formtitle": "Μην διστάσετε να επικοινωνήσετε μαζί μας",
+  "contactpage-mobile": "Κινητό Τηλέφωνο",
+  "contactpage-phone": "Τηλέφωνο",
+  "contactpage-placeholder3": "Μήνυμα...",
+  "contactpage-placehorder1": "Όνομα",
+  "contactpage-result1": "ΑΠΟΣΤΟΛΗ",
+  "contactpage-result2": "Το μήνυμα σας έχει αποσταλεί!",
+  "contactpage-send": "Στείλτε μας email",
+  "contactpage-title": "Επικοινωνία"
+}
