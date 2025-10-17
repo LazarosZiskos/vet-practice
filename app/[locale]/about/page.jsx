@@ -90,11 +90,6 @@ const About = () => {
                 <span className="text-blue1">{t("aboutus-keyword5")}.</span>
               </p>
             </div>
-            {/* <ul className="list-disc pt-5 text-gray1/70 text-sm md:text-md space-y-2 ">
-              <li> Την καλύτερη φροντιδα του κατοικιδίου σας.</li>
-              <li> Την άμεση εξυπηρέτηση σας.</li>
-              <li> Την ξεκάθαρη επικοινωνία μεταξύ γιατρού και ιδιοκτήτη.</li>
-            </ul> */}
           </div>
           <div className="w-full md:w-1/2 mt-10" id="trigger">
             <Accordion type="single" collapsible className="w-full">
