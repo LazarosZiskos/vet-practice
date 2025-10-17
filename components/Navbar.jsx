@@ -43,9 +43,9 @@ const Navbar = () => {
               <MenuIcon />
             </SheetTrigger>
             <SheetContent className="flex flex-col items-center justify-center w-[300px]">
-              <div className="flex items-start mt-[-300px]">
+              <div className="flex items-start mt-[-100px]">
                 <img
-                  src="main_logo.jpg"
+                  src="/main_logo.jpg"
                   alt="logo"
                   className="w-[150px] mb-20"
                 />
