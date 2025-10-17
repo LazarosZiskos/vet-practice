@@ -19,8 +19,8 @@
   "services": {
     "service1": {
       "title": "Preventive Care",
-      "subtitle": "An annual veterinary check-up should be one of your top priorities",
-      "subtitle2": "Preventive veterinary care is key to your pet’s long-term health.",
+      "subtitle": "Preventive veterinary care is the key to your pet’s health.",
+      "subtitle2": "Preventive veterinary care is the key to your pet’s health.",
       "para1": "Preventive veterinary care is the most effective strategy to keep your pets healthy and offer them a life of well-being. The goal of prevention is to detect and address health issues before they develop into serious conditions that require emergency treatment, causing stress to your pet and financial burden to you.",
       "para2": "Routine checkups, proper vaccinations, and parasite control are essential to ensure that our pets remain healthy and protected. In our region, the prevailing climate makes parasite prevention critical. Timely vaccination also helps prevent diseases like parvovirus and leptospirosis.",
       "para3": "Given our climate, preventive care against parasites is essential to avoid diseases like leishmaniasis, ehrlichiosis, and heartworm. Timely and proper vaccination also protects pets from infections like parvovirus, leptospirosis, etc.",
@@ -95,6 +95,9 @@
       "para2": "We also offer expert guidance regarding travel regulations for different countries — including vaccine requirements, tests, and entry conditions — so that your journey is smooth and compliant. Our team is here to support every step of the preparation.",
       "para3": "",
       "para4": ""
+    },
+    "services10": {
+      "title": "All services"
     }
   }
 }

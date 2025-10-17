@@ -12,6 +12,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { notFound } from "next/navigation";
 import { useTranslation } from "react-i18next";
+import MyButton from "@/components/MyButton";
+import { ArrowLeft } from "lucide-react";
 
 export default function ServicePage({ params }) {
   const { id, locale } = params; // ✅ You now get both from the dynamic route
@@ -89,20 +91,40 @@ export default function ServicePage({ params }) {
 
           {(service.para1Key || service.para2Key) && (
             <div className="w-full max-w-[800px] p-2">
-              {service.para1Key && (
+              {service.para1Key && t(service.para1Key)?.trim() && (
                 <p className="text-slate-600 p-2">{t(service.para1Key)}</p>
               )}
-              {service.para2Key && t(service.para2Key).trim() && (
+
+              {service.para2Key && t(service.para2Key)?.trim() && (
                 <p className="text-slate-600 p-2">{t(service.para2Key)}</p>
               )}
-              {service.para3Key && t(service.para3Key).trim() && (
+
+              {service.para3Key && t(service.para3Key)?.trim() && (
                 <p className="text-slate-600 p-2">{t(service.para3Key)}</p>
               )}
-              {service.para4Key && t(service.para4Key).trim() && (
-                <p className="text-slate-600 p-2">{t(service.para4Key)}</p>
-              )}
+
+              {service.para4Key &&
+                (() => {
+                  const value = t(service.para4Key);
+                  // hide if empty, undefined, or if i18n returns the key itself
+                  if (
+                    !value ||
+                    value.trim() === "" ||
+                    value === service.para4Key
+                  )
+                    return null;
+                  return <p className="text-slate-600 p-2">{value}</p>;
+                })()}
             </div>
           )}
+          <div className="mt-10">
+            <MyButton
+              title={t("button-title")}
+              href="/services"
+              style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1 flex flex-row-reverse gap-3"
+              icon={<ArrowLeft />}
+            />
+          </div>
         </div>
       </div>
     </section>
