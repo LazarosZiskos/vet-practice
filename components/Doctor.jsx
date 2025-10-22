@@ -40,7 +40,7 @@ const Doctor = () => {
       <div className="flex flex-col md:flex-row justify-between w-full gap-4">
         <div className="md:w-1/2 flex items-center justify-end mb-4">
           <img
-            src="doctor2.jpg"
+            src="doctor3.jpeg"
             alt="doctor"
             className="w-full max-h-[500px] object-contain"
           />

@@ -58,10 +58,8 @@ export const metadata = {
       maxVideoPreview: -1,
     },
   },
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/icon.ico" },
 };
-
-// const i18nNamespaces = ["Footer"];
 
 async function Layout({ children, params: { locale } }) {
   // Fetch translations for the current locale
