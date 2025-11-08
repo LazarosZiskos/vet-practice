@@ -140,14 +140,12 @@ const About = () => {
           <p className="text-md pt-4">{t("aboutus-vet2")}</p>
           <p className="text-md pt-4">{t("aboutus-vet3")}</p>
         </div>
-        <div
-          className="pt-10
-          md:w-1/2
-          flex justify-end
-          pb-5
-        "
-        >
-          <img src="/doctor2.jpg" alt="lina-akakiadou" className="rounded-lg" />
+        <div className="pt-10 md:w-1/2 pl-4 flex justify-end pb-5">
+          <img
+            src="/doctor4.jpeg"
+            alt="Κτηνίατρος Λίνα Ακακιάδου"
+            className="rounded-lg h-[400px] object-cover"
+          />
         </div>
       </div>
 

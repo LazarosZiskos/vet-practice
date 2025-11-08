@@ -59,6 +59,13 @@ const Space = () => {
               </CarouselItem>
               <CarouselItem>
                 <img
+                  src="space9.jpeg"
+                  alt="space1"
+                  className="w-full h-[500px] object-contain items-center"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
                   src="space2.jpg"
                   alt="space1"
                   className="w-full h-[500px] object-contain items-center"
@@ -73,8 +80,15 @@ const Space = () => {
               </CarouselItem>
               <CarouselItem>
                 <img
-                  src="space4.jpg"
-                  alt="space1"
+                  src="space4.jpeg"
+                  alt="space4"
+                  className="w-full h-[400px] object-contain items-center"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="space11.jpeg"
+                  alt="space11"
                   className="w-full h-[500px] object-contain items-center"
                 />
               </CarouselItem>
@@ -82,6 +96,41 @@ const Space = () => {
                 <img
                   src="space5.jpg"
                   alt="space1"
+                  className="w-full h-[500px] object-contain items-center"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="space7.jpeg"
+                  alt="space7"
+                  className="w-full h-[500px] object-contain items-center"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="space11.jpeg"
+                  alt="space11"
+                  className="w-full h-[500px] object-contain items-center"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="space8.jpeg"
+                  alt="space8"
+                  className="w-full h-[500px] object-contain items-center"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="space12.jpeg"
+                  alt="space12"
+                  className="w-full h-[500px] object-contain items-center"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src="space10.jpeg"
+                  alt="space10"
                   className="w-full h-[500px] object-contain items-center"
                 />
               </CarouselItem>

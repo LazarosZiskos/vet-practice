@@ -31,8 +31,8 @@ const Services = () => {
     <section>
       <div className="top-[60px]">
         <img
-          className="w-full h-[30vh] object-cover pt-12"
-          src="/bg-services.jpg"
+          className="w-full h-[30vh] object-center pt-12"
+          src="/bg-about.jpg"
           alt="services-photo"
         />
         <div className="absolute justify-center items-center flex flex-col top-[100px] w-full h-[40vh]">
@@ -66,11 +66,6 @@ const Services = () => {
       </div>
 
       <div className="container pt-10 pb-10" id="div2">
-        <div>
-          <h2 className="text-center mx-auto text-slate-400 text-sm md:text-md lg:w-[1000px]">
-            {t("servicepage-subtitle")}
-          </h2>
-        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center pt-20">
           {services.map((service, index) => (
             <Service

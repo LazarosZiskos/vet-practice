@@ -103,18 +103,13 @@ export default function ServicePage({ params }) {
                 <p className="text-slate-600 p-2">{t(service.para3Key)}</p>
               )}
 
-              {service.para4Key &&
-                (() => {
-                  const value = t(service.para4Key);
-                  // hide if empty, undefined, or if i18n returns the key itself
-                  if (
-                    !value ||
-                    value.trim() === "" ||
-                    value === service.para4Key
-                  )
-                    return null;
-                  return <p className="text-slate-600 p-2">{value}</p>;
-                })()}
+              {service.para4Key && t(service.para4Key)?.trim() && (
+                <p className="text-slate-600 p-2">{t(service.para4Key)}</p>
+              )}
+
+              {service.para5Key && t(service.para5Key)?.trim() && (
+                <p className="text-slate-600 p-2">{t(service.para5Key)}</p>
+              )}
             </div>
           )}
           <div className="mt-10">

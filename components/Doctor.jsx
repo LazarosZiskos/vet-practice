@@ -40,9 +40,9 @@ const Doctor = () => {
       <div className="flex flex-col md:flex-row justify-between w-full gap-4">
         <div className="md:w-1/2 flex items-center justify-end mb-4">
           <img
-            src="doctor3.jpeg"
+            src="doctor41.jpeg"
             alt="doctor"
-            className="w-full max-h-[500px] object-contain"
+            className="w-full object-cover md:mr-4 rounded-lg "
           />
         </div>
         <div className="flex flex-col justify-around md:w-1/2">
