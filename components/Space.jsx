@@ -53,85 +53,97 @@ const Space = () => {
               <CarouselItem>
                 <img
                   src="space1.jpg"
-                  alt="space1"
+                  alt="Exterior of the practice"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space9.jpeg"
-                  alt="space1"
+                  alt="Interior office"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space2.jpg"
-                  alt="space1"
+                  alt="Interior offices"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space3.jpg"
-                  alt="space1"
+                  alt="Diagnostic table"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space4.jpeg"
-                  alt="space4"
+                  alt="Diagonistc table"
                   className="w-full h-[400px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space11.jpeg"
-                  alt="space11"
+                  alt="Interior and animal food"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space5.jpg"
-                  alt="space1"
+                  alt="Vet practice logo"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space7.jpeg"
-                  alt="space7"
+                  alt="Interior and animal foods that we sell"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space11.jpeg"
-                  alt="space11"
+                  alt="Animal food we sell"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space8.jpeg"
-                  alt="space8"
+                  alt="Taking blood sample from a dog"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space12.jpeg"
-                  alt="space12"
+                  alt="A dog getting their ears checked"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
               <CarouselItem>
                 <img
                   src="space10.jpeg"
-                  alt="space10"
+                  alt="Photo of a puppy"
                   className="w-full h-[500px] object-contain items-center"
+                  fetchPriority="high"
                 />
               </CarouselItem>
             </CarouselContent>

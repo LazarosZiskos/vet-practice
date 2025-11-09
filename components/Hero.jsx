@@ -28,6 +28,7 @@ const Hero = () => {
           className="w-full h-[70vh] pt-12 object-cover"
           src="/dog2.jpg"
           alt="dog-2"
+          fetchPriority="high"
         />
         {/* <div className="bg-black/40 absolute top-[157px] w-full h-[64.4vh]" /> */}
         <div className="absolute justify-center items-center flex flex-col top-[120px] w-full h-[70vh]">

@@ -41,8 +41,9 @@ const Doctor = () => {
         <div className="md:w-1/2 flex items-center justify-end mb-4">
           <img
             src="doctor41.jpeg"
-            alt="doctor"
+            alt="Η γιατρός - Λίνα Ακακιάδου"
             className="w-full object-cover md:mr-4 rounded-lg "
+            fetchPriority="high"
           />
         </div>
         <div className="flex flex-col justify-around md:w-1/2">

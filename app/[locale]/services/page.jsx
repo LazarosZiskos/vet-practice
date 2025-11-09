@@ -33,7 +33,8 @@ const Services = () => {
         <img
           className="w-full h-[30vh] object-center pt-12"
           src="/bg-about.jpg"
-          alt="services-photo"
+          alt="about page background photo"
+          fetchPriority="high"
         />
         <div className="absolute justify-center items-center flex flex-col top-[100px] w-full h-[40vh]">
           <div className="container">

@@ -37,6 +37,7 @@ const About = () => {
           className="w-full h-[30vh] object-cover pt-12"
           src="/bg-about.jpg"
           alt="about-photo"
+          fetchPriority="high"
         />
         <div className="absolute justify-center items-center flex flex-col top-[100px] w-full h-[40vh]">
           <div className="container">
@@ -145,6 +146,7 @@ const About = () => {
             src="/doctor4.jpeg"
             alt="Κτηνίατρος Λίνα Ακακιάδου"
             className="rounded-lg h-[400px] object-cover"
+            fetchPriority="high"
           />
         </div>
       </div>

@@ -49,8 +49,9 @@ const Services = () => {
           <Card>
             <img
               src="cat1.png"
-              alt="dog1"
+              alt="Image of a dog"
               className="w-full h-[310px] object-cover "
+              fetchPriority="high"
             />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title1")}
@@ -62,8 +63,9 @@ const Services = () => {
           <Card>
             <img
               src="cat23.jpg"
-              alt="cat1"
+              alt="Image of a cat"
               className="w-full h-[310px] object-cover "
+              fetchPriority="high"
             />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title2")}
@@ -75,8 +77,9 @@ const Services = () => {
           <Card>
             <img
               src="dog-surgery3.jpg"
-              alt="dog4"
+              alt="Image of a dog doing surgery"
               className="w-full h-[310px] object-cover"
+              fetchPriority="high"
             />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title3")}

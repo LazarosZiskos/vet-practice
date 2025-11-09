@@ -61,7 +61,8 @@ const Contact = () => {
         <img
           className="w-full h-[30vh] object-cover pt-12"
           src="/bg-about.jpg"
-          alt="services-photo"
+          alt="about background photo"
+          fetchPriority="high"
         />
         <div className="absolute justify-center items-center flex flex-col top-[100px] w-full h-[40vh]">
           <div className="container">
