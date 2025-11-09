@@ -1,4 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// next.config.js
+import withBundleAnalyzer from "@next/bundle-analyzer";
 
-export default nextConfig;
+const withAnalyzer = withBundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+
+  experimental: {
+    legacyBrowsers: false,
+    browsersListForSwc: true,
+  },
+};
+
+export default withAnalyzer(nextConfig);
