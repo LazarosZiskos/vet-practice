@@ -16,6 +16,7 @@ import {
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 const About = () => {
   useGSAP(() => {
@@ -33,11 +34,13 @@ const About = () => {
   return (
     <section>
       <div className="top-[60px]">
-        <img
+        <Image
           className="w-full h-[30vh] object-cover pt-12"
           src="/bg-about.jpg"
           alt="about-photo"
-          fetchPriority="high"
+          priority
+          width={1920}
+          height={300}
         />
         <div className="absolute justify-center items-center flex flex-col top-[100px] w-full h-[40vh]">
           <div className="container">
@@ -142,11 +145,12 @@ const About = () => {
           <p className="text-md pt-4">{t("aboutus-vet3")}</p>
         </div>
         <div className="pt-10 md:w-1/2 pl-4 flex justify-end pb-5">
-          <img
-            src="/doctor4.jpeg"
-            alt="Κτηνίατρος Λίνα Ακακιάδου"
-            className="rounded-lg h-[400px] object-cover"
-            fetchPriority="high"
+          <Image
+            src="/doctor41.jpeg"
+            alt="Η γιατρός - Λίνα Ακακιάδου"
+            className="w-full object-cover md:mr-4 rounded-lg "
+            width={1064}
+            height={722}
           />
         </div>
       </div>

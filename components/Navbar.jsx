@@ -7,6 +7,7 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
 import LanguageChanger from "./LanguangeChanger";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 const Navbar = () => {
   const [sheetOpen, setSheetOpen] = useState(false);
@@ -17,11 +18,14 @@ const Navbar = () => {
       <div className="container flex items-center justify-between">
         <div className="text-xl font-bold md:text-3xl mb-10">
           <a href="/">
-            <img
+            <Image
               src="/main_logo.jpg"
               alt="logo"
               className="w-[150px] h-full"
-            ></img>
+              width={1473}
+              height={1049}
+              priority
+            />
           </a>
         </div>
         <div className="md:flex space-x-10 hidden">
@@ -44,10 +48,13 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent className="flex flex-col items-center justify-center w-[300px]">
               <div className="flex items-start mt-[-100px]">
-                <img
+                <Image
                   src="/main_logo.jpg"
                   alt="logo"
                   className="w-[150px] mb-20"
+                  width={1473}
+                  height={1049}
+                  priority
                 />
               </div>
               {navLinks.map((link, index) => (

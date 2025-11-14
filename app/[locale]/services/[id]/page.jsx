@@ -14,6 +14,7 @@ import { notFound } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import MyButton from "@/components/MyButton";
 import { ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 export default function ServicePage({ params }) {
   const { id, locale } = params; // ✅ You now get both from the dynamic route
@@ -38,11 +39,13 @@ export default function ServicePage({ params }) {
   return (
     <section>
       <div className="top-[60px]">
-        <img
+        <Image
           className="w-full h-[30vh] object-cover pt-12"
           src="/bg-about.jpg"
-          alt="services background photo"
-          fetchPriority="high"
+          alt="about background photo"
+          priority
+          width={1920}
+          height={300}
         />
         <div className="absolute justify-center items-center flex flex-col top-[100px] w-full h-[40vh]">
           <div className="container">

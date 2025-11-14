@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,11 +40,12 @@ const Doctor = () => {
       </h1>
       <div className="flex flex-col md:flex-row justify-between w-full gap-4">
         <div className="md:w-1/2 flex items-center justify-end mb-4">
-          <img
-            src="doctor41.jpeg"
+          <Image
+            src="/doctor41.jpeg"
             alt="Η γιατρός - Λίνα Ακακιάδου"
             className="w-full object-cover md:mr-4 rounded-lg "
-            fetchPriority="high"
+            width={1064}
+            height={722}
           />
         </div>
         <div className="flex flex-col justify-around md:w-1/2">

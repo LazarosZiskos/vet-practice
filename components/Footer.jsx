@@ -11,8 +11,9 @@ import {
 import Link from "next/link";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
-// {t("accordion-title")}
+
 
 const Footer = () => {
   const { t } = useTranslation("Footer");
@@ -22,11 +23,12 @@ const Footer = () => {
       <div className="container flex flex-col justify-center items-center md:flex-row md:space-x-20 lg:justify-between">
         <div className="flex flex-col gap-4 items-center justify-center">
           <Link href="/">
-            <img
+            <Image
               src="/main_logo.jpg"
               alt="footer-logo"
               className="w-[150px]"
-              fetchPriority="high"
+              width={1473}
+              height={1049}
             />
           </Link>
           <p className="text-gray2/60 text-sm max-w-[350px] text-center">

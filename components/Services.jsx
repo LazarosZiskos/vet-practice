@@ -6,6 +6,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,11 +48,12 @@ const Services = () => {
           ref={scrollref}
         >
           <Card>
-            <img
-              src="cat1.png"
+            <Image
+              src="/cat1.png"
               alt="Image of a dog"
               className="w-full h-[310px] object-cover "
-              fetchPriority="high"
+              width={1024}
+              height={1024} 
             />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title1")}
@@ -61,11 +63,12 @@ const Services = () => {
             </CardDescription>
           </Card>
           <Card>
-            <img
-              src="cat23.jpg"
+            <Image
+              src="/cat23.jpg"
               alt="Image of a cat"
-              className="w-full h-[310px] object-cover "
-              fetchPriority="high"
+              className="w-full h-[310px] object-cover"
+              width={1024}
+              height={1024} 
             />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title2")}
@@ -75,11 +78,12 @@ const Services = () => {
             </CardDescription>
           </Card>
           <Card>
-            <img
-              src="dog-surgery3.jpg"
-              alt="Image of a dog doing surgery"
+            <Image
+              src="/dog-surgery3.jpg"
+              alt="Image of a dog surgery"
               className="w-full h-[310px] object-cover"
-              fetchPriority="high"
+              width={1024}
+              height={1024} 
             />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title3")}

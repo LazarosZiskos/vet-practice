@@ -12,11 +12,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Link from "next/link";
-import { use, useState } from "react";
+import {  useState } from "react";
 import { FaMailBulk, FaPhone } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { SlScreenSmartphone } from "react-icons/sl";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 const Contact = () => {
   const [result, setResult] = useState("Αποστολή");
@@ -58,11 +59,13 @@ const Contact = () => {
   return (
     <section>
       <div className="top-[60px]">
-        <img
+        <Image
           className="w-full h-[30vh] object-cover pt-12"
           src="/bg-about.jpg"
           alt="about background photo"
-          fetchPriority="high"
+          priority
+          width={1920}
+          height={300}
         />
         <div className="absolute justify-center items-center flex flex-col top-[100px] w-full h-[40vh]">
           <div className="container">

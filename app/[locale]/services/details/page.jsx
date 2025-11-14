@@ -11,6 +11,7 @@ import { detailServices } from "@/constants";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 const ServiceDetails = () => {
   useGSAP(() => {
@@ -27,11 +28,13 @@ const ServiceDetails = () => {
   return (
     <section>
       <div className="top-[60px]">
-        <img
+        <Image
           className="w-full h-[30vh] object-cover pt-12"
           src="/bg-about.jpg"
-          alt="services-photo"
-          fetchPriority="high"
+          alt="about background photo"
+          priority
+          width={1920}
+          height={300}
         />
         <div className="absolute justify-center items-center flex flex-col top-[100px] w-full h-[40vh]">
           <div className="container">

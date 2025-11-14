@@ -11,6 +11,7 @@ import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,99 +52,124 @@ const Space = () => {
           <Carousel>
             <CarouselContent>
               <CarouselItem>
-                <img
-                  src="space1.jpg"
+                <Image
+                  src="/space1.jpg"
                   alt="Exterior of the practice"
                   className="w-full h-[500px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={648}
+                  height={486}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space9.jpeg"
+                <Image
+                  src="/space9.jpeg"
                   alt="Interior office"
                   className="w-full h-[500px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={1600}
+                  height={720}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space2.jpg"
+                <Image
+                  src="/space2.jpg"
                   alt="Interior offices"
                   className="w-full h-[500px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={648}
+                  height={486}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space3.jpg"
+                <Image
+                  src="/space3.jpg"
                   alt="Diagnostic table"
                   className="w-full h-[500px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={648}
+                  height={486}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space4.jpeg"
+                <Image
+                  src="/space4.jpeg"
                   alt="Diagonistc table"
                   className="w-full h-[400px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={800}
+                  height={360}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space11.jpeg"
+                <Image
+                  src="/space11.jpeg"
                   alt="Interior and animal food"
                   className="w-full h-[500px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={1600}
+                  height={720}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space5.jpg"
+                <Image
+                  src="/space5.jpg"
                   alt="Vet practice logo"
                   className="w-full h-[500px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={648}
+                  height={486}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space7.jpeg"
+                <Image
+                  src="/space7.jpeg"
                   alt="Interior and animal foods that we sell"
                   className="w-full h-[500px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={1600}
+                  height={720}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space11.jpeg"
+                <Image
+                  src="/space11.jpeg"
                   alt="Animal food we sell"
                   className="w-full h-[500px] object-contain items-center"
                   fetchPriority="high"
+                  loading="lazy"
+                  width={1600}
+                  height={720}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space8.jpeg"
+                <Image
+                  src="/space8.jpeg"
                   alt="Taking blood sample from a dog"
                   className="w-full h-[500px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={1600}
+                  height={1065}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space12.jpeg"
+                <Image
+                  src="/space12.jpeg"
                   alt="A dog getting their ears checked"
                   className="w-full h-[500px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={1600}
+                  height={1065}
                 />
               </CarouselItem>
               <CarouselItem>
-                <img
-                  src="space10.jpeg"
+                <Image
+                  src="/space10.jpeg"
                   alt="Photo of a puppy"
                   className="w-full h-[500px] object-contain items-center"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width={1600}
+                  height={1065}
                 />
               </CarouselItem>
             </CarouselContent>

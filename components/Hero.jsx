@@ -7,6 +7,7 @@ import { BriefcaseMedical, Hospital, Syringe } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 const Hero = () => {
   useGSAP(() => {
@@ -24,11 +25,14 @@ const Hero = () => {
   return (
     <section>
       <div className="top-[20px]">
-        <img
+        <Image
           className="w-full h-[70vh] pt-12 object-cover"
           src="/dog2.jpg"
           alt="dog-2"
-          fetchPriority="high"
+          priority
+          width={1920}
+          height={722}
+
         />
         {/* <div className="bg-black/40 absolute top-[157px] w-full h-[64.4vh]" /> */}
         <div className="absolute justify-center items-center flex flex-col top-[120px] w-full h-[70vh]">
