@@ -53,7 +53,8 @@ const Services = () => {
               alt="Image of a dog"
               className="w-full h-[310px] object-cover "
               width={1024}
-              height={1024} 
+              height={1024}
+              sizes="(max-width: 768px) 100vw, 600px"
             />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title1")}
@@ -68,7 +69,8 @@ const Services = () => {
               alt="Image of a cat"
               className="w-full h-[310px] object-cover"
               width={1024}
-              height={1024} 
+              height={1024}
+              sizes="(max-width: 768px) 100vw, 600px"
             />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title2")}
@@ -83,7 +85,8 @@ const Services = () => {
               alt="Image of a dog surgery"
               className="w-full h-[310px] object-cover"
               width={1024}
-              height={1024} 
+              height={1024}
+              sizes="(max-width: 768px) 100vw, 600px"
             />
             <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
               {t("ypiresies-title3")}

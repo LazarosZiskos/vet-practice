@@ -9,7 +9,7 @@ import initTranslations from "../i18"; // Import your translation init function
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  metadataBase: new URL("https://vet-practice.vercel.app"),
+  metadataBase: new URL("https://www.ktiniatreio-karvali.gr"),
   title: {
     default: "Κτηνιατρείο Νέα Καρβάλη, Καβάλα – Λίνα Ακακιάδου",
     template: "%s | Λίνα Ακακιάδου",
@@ -34,17 +34,17 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "el_GR",
-    url: "https://vet-practice.vercel.app",
+    url: "https://www.ktνηιατρειο-karvali.gr",
     title: "Κτηνίατρος Νέα Καρβάλη, Καβάλα – Λίνα Ακακιάδου",
     description:
       "Κτηνιατρείο ζώων συντροφιάς στη Νέα Καρβάλη. Εξυπηρετούμε όλη την Καβάλα.",
     siteName: "Κτηνιατρείο Λίνας Ακακιάδου",
   },
   alternates: {
-    canonical: "https://vet-practice.vercel.app",
+    canonical: "https://www.ktiniatreio-karvali.gr",
     languages: {
-      el: "https://vet-practice.vercel.app",
-      en: "https://vet-practice.vercel.app/en",
+      el: "https://www.ktiniatreio-karvali.gr",
+      en: "https://www.ktiniatreio-karvali.gr/en",
     },
   },
   robots: {
@@ -60,6 +60,7 @@ export const metadata = {
   },
   icons: { icon: "/icon.ico" },
 };
+
 
 async function Layout({ children, params: { locale } }) {
   // Fetch translations for the current locale

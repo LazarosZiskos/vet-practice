@@ -46,6 +46,7 @@ const Doctor = () => {
             className="w-full object-cover md:mr-4 rounded-lg "
             width={1064}
             height={722}
+            sizes="(max-width: 768px) 100vw, 600px"
           />
         </div>
         <div className="flex flex-col justify-around md:w-1/2">

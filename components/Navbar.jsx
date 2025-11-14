@@ -25,6 +25,7 @@ const Navbar = () => {
               width={1473}
               height={1049}
               priority
+              sizes="150px"
             />
           </a>
         </div>
@@ -55,6 +56,7 @@ const Navbar = () => {
                   width={1473}
                   height={1049}
                   priority
+                  sizes="150px"
                 />
               </div>
               {navLinks.map((link, index) => (

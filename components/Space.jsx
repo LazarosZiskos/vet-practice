@@ -59,6 +59,7 @@ const Space = () => {
                   loading="lazy"
                   width={648}
                   height={486}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -69,6 +70,7 @@ const Space = () => {
                   loading="lazy"
                   width={1600}
                   height={720}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -79,6 +81,7 @@ const Space = () => {
                   loading="lazy"
                   width={648}
                   height={486}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -89,6 +92,7 @@ const Space = () => {
                   loading="lazy"
                   width={648}
                   height={486}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -99,6 +103,7 @@ const Space = () => {
                   loading="lazy"
                   width={800}
                   height={360}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -109,6 +114,7 @@ const Space = () => {
                   loading="lazy"
                   width={1600}
                   height={720}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -119,6 +125,7 @@ const Space = () => {
                   loading="lazy"
                   width={648}
                   height={486}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -129,6 +136,7 @@ const Space = () => {
                   loading="lazy"
                   width={1600}
                   height={720}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -140,6 +148,7 @@ const Space = () => {
                   loading="lazy"
                   width={1600}
                   height={720}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -150,6 +159,7 @@ const Space = () => {
                   loading="lazy"
                   width={1600}
                   height={1065}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -160,6 +170,7 @@ const Space = () => {
                   loading="lazy"
                   width={1600}
                   height={1065}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
               <CarouselItem>
@@ -170,6 +181,7 @@ const Space = () => {
                   loading="lazy"
                   width={1600}
                   height={1065}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </CarouselItem>
             </CarouselContent>

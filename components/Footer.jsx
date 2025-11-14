@@ -29,6 +29,7 @@ const Footer = () => {
               className="w-[150px]"
               width={1473}
               height={1049}
+              sizes="150px"
             />
           </Link>
           <p className="text-gray2/60 text-sm max-w-[350px] text-center">
