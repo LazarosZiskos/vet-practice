@@ -31,7 +31,7 @@ const Services = () => {
     <section>
       <div className="top-[60px]">
         <img
-          className="w-full h-[30vh] object-center pt-12"
+          className="w-full h-[30vh] object-cover pt-12"
           src="/bg-about.jpg"
           alt="about page background photo"
           fetchPriority="high"

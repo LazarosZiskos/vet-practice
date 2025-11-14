@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: "https://vet-practice.vercel.app",
+  siteUrl: "https://www.ktiniatreio-karvali.gr/",
 
   generateRobotsTxt: true,
 
@@ -15,16 +15,15 @@ module.exports = {
 
   robotsTxtOptions: {
     policies: [{ userAgent: "*", allow: "/" }],
-    additionalSitemaps: ["https://vet-practice.vercel.app/sitemap.xml"],
   },
 
   alternateRefs: [
     {
-      href: "https://vet-practice.vercel.app/",
+      href: "https://www.ktiniatreio-karvali.gr/",
       hreflang: "el",
     },
     {
-      href: "https://vet-practice.vercel.app/en",
+      href: "https://www.ktiniatreio-karvali.gr/en",
       hreflang: "en",
     },
   ],
