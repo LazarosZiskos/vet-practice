@@ -13,8 +13,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 
-
-
 const Footer = () => {
   const { t } = useTranslation("Footer");
 
@@ -48,8 +46,10 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="https://facebook.com" target="blank"
-              aria-label="Επίσκεψη στη σελίδα μας στο Facebook"
+              <Link
+                href="https://www.facebook.com/profile.php?id=61583960009200"
+                target="blank"
+                aria-label="Επίσκεψη στη σελίδα μας στο Facebook"
               >
                 <Facebook size={25} className="hover:text-blue1" />
               </Link>
@@ -58,8 +58,7 @@ const Footer = () => {
               <Link
                 href="https://www.google.com/maps/place/%CE%9A%CF%84%CE%B7%CE%BD%CE%B9%CE%B1%CF%84%CF%81%CE%B5%CE%AF%CE%BF+%7C+%CE%9B%CE%AF%CE%BD%CE%B1+%CE%91%CE%BA%CE%B1%CE%BA%CE%B9%CE%AC%CE%B4%CE%BF%CF%85/@40.9623287,24.5104422,17z/data=!3m1!4b1!4m6!3m5!1s0x14aea3985ec00933:0x3e018476d1d5f971!8m2!3d40.9623247!4d24.5130171!16s%2Fg%2F11t286y665?entry=ttu"
                 target="blank"
-              aria-label="Τοποθεσία του κτηνιατρείου μας στο Google Maps"
-
+                aria-label="Τοποθεσία του κτηνιατρείου μας στο Google Maps"
               >
                 <MapPinned size={25} className="hover:text-blue1" />
               </Link>
