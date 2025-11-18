@@ -30,6 +30,7 @@ const ScrollButton = () => {
         <button
           className="fixed bottom-5 right-5 z-50 cursor-pointer p-2 md:p-4 bg-blue1 text-white group "
           onClick={scrollToTop}
+          aria-label="Επιστροφή στην κορυφή της σελίδας"
         >
           <ArrowUp className="group-hover:scale-125" />
         </button>

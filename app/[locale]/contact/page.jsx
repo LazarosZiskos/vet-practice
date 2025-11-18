@@ -110,6 +110,7 @@ const Contact = () => {
               href="mailto:lakakiad@gmail.com"
               target="blank"
               className="flex flex-col justify-center items-center"
+              aria-label="Αποστολή email στην κτηνίατρο Λίνα Ακακιάδου"
             >
               <FaMailBulk size={50} className="text-gray1 pb-2" />
               <h2 className="text-2xl">E-mail</h2>
@@ -130,6 +131,7 @@ const Contact = () => {
               href="tel:2510317262"
               target="blank"
               className="flex flex-col justify-center items-center"
+              aria-label="Τηλεφνήστε στο σταθερό τηλέφωνο του κτηνιατρείου"
             >
               <FaPhone size={50} className="text-gray1 pb-2" />
               <h2 className="text-2xl">{t("contactpage-phone")}</h2>
@@ -150,6 +152,7 @@ const Contact = () => {
               href="tel:6937014058"
               target="blank"
               className="flex flex-col justify-center items-center"
+              aria-label="Τηλεφνήστε στο κινητό τηλέφωνο της κτηνιάτρου"
             >
               <SlScreenSmartphone size={50} className="text-gray1 pb-2" />
               <h2 className="text-2xl">{t("contactpage-mobile")}</h2>
@@ -170,6 +173,7 @@ const Contact = () => {
               target="blank"
               className="flex flex-col justify-center items-center"
               href="https://www.google.com/maps/place/%CE%9A%CF%84%CE%B7%CE%BD%CE%B9%CE%B1%CF%84%CF%81%CE%B5%CE%AF%CE%BF+%7C+%CE%9B%CE%AF%CE%BD%CE%B1+%CE%91%CE%BA%CE%B1%CE%BA%CE%B9%CE%AC%CE%B4%CE%BF%CF%85/@40.9623287,24.5104422,17z/data=!3m1!4b1!4m6!3m5!1s0x14aea3985ec00933:0x3e018476d1d5f971!8m2!3d40.9623247!4d24.5130171!16s%2Fg%2F11t286y665?entry=ttu"
+              aria-label="Βρείτε την τοποθεσία μας στο Google Maps"
             >
               <FiMapPin size={50} className="text-gray1 pb-2" />
               <h2 className="text-2xl">{t("contactpage-address")}</h2>

@@ -60,6 +60,7 @@ export default function LanguageChanger({ closeSheet }) {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-32 px-4 py-2 text-sm font-medium border rounded-md bg-white shadow-sm hover:bg-gray-100 focus:outline-none flex items-center justify-center gap-2"
+        aria-label={isOpen ? "Κλείσιμο μενού πλοήγησης" : "Άνοιγμα μενού πλοήγησης"}
       >
         {currentLocale === "el" ? "🇬🇷 " : "🇬🇧 "}
         <svg
@@ -82,6 +83,7 @@ export default function LanguageChanger({ closeSheet }) {
                 className={`w-full text-left px-4 py-2 hover:bg-gray-100 flex items-center gap-2 ${
                   currentLocale === "el" ? "font-semibold text-blue-600" : ""
                 }`}
+                aria-label="Αλλαγή γλώσσας σελίδας σε Ελληνικά"
               >
                 🇬🇷 Ελληνικά
               </button>
@@ -92,6 +94,7 @@ export default function LanguageChanger({ closeSheet }) {
                 className={`w-full text-left px-4 py-2 hover:bg-gray-100 flex items-center gap-2 ${
                   currentLocale === "en" ? "font-semibold text-blue-600" : ""
                 }`}
+                aria-label="Αλλαγή γλώσσας σελίδας σε Αγγλικά"
               >
                 🇬🇧 English
               </button>

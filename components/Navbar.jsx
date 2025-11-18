@@ -17,7 +17,7 @@ const Navbar = () => {
     <header className="h-[50px] mt-5 mb-10">
       <div className="container flex items-center justify-between">
         <div className="text-xl font-bold md:text-3xl mb-10">
-          <a href="/">
+          <a href="/" aria-label="Επιστροφή στην αρχική σελίδα">
             <Image
               src="/main_logo.jpg"
               alt="logo"
@@ -37,6 +37,7 @@ const Navbar = () => {
               className={`font-semibold transition-all ease-in-out duration-200 hover:text-blue1 ${
                 pathname.endsWith(link.href) ? "text-blue1" : ""
               }`}
+              aria-label={link.title}
             >
               {t(link.title)}
             </Link>
@@ -67,6 +68,7 @@ const Navbar = () => {
                     className={`font-semibold transition-all ease-in-out duration-100 hover:text-blue1 ${
                       pathname === link.href ? "text-blue1" : ""
                     }`}
+                    aria-label={link.title}
                   >
                     {t(link.title)}
                   </Link>
