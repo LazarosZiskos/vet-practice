@@ -39,7 +39,7 @@ const Services = () => {
           <h1 className="font-bold text-2xl lg:text-4xl pb-4 tracking-wider">
             {t("ypiresies")}
           </h1>
-          <p className="text-center max-w-[450px] text-slate-400 text-sm leading-6">
+          <p className="text-center max-w-[450px] text-[#595959] text-sm leading-6">
             {t("ypiresies-subheader")}
           </p>
         </div>
@@ -56,10 +56,10 @@ const Services = () => {
               height={1024}
               sizes="(max-width: 768px) 100vw, 600px"
             />
-            <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
+            <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg">
               {t("ypiresies-title1")}
             </CardTitle>
-            <CardDescription className="pb-5 pl-4 pr-4">
+            <CardDescription className="pb-5 pl-4 pr-4 text-[#595959]">
               {t("ypiresies-subtitle1")}
             </CardDescription>
           </Card>
@@ -72,10 +72,10 @@ const Services = () => {
               height={1024}
               sizes="(max-width: 768px) 100vw, 600px"
             />
-            <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
+            <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg">
               {t("ypiresies-title2")}
             </CardTitle>
-            <CardDescription className="pb-5 pl-4 pr-4">
+            <CardDescription className="pb-5 pl-4 pr-4 text-[#595959]">
               {t("ypiresies-subtitle2")}
             </CardDescription>
           </Card>
@@ -88,10 +88,10 @@ const Services = () => {
               height={1024}
               sizes="(max-width: 768px) 100vw, 600px"
             />
-            <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg hover:text-blue1">
+            <CardTitle className="pt-10 pb-5 pl-4 pr-4 text-lg">
               {t("ypiresies-title3")}
             </CardTitle>
-            <CardDescription className="pb-5 pl-4 pr-4">
+            <CardDescription className="pb-5 pl-4 pr-4 text-[#595959]">
               {t("ypiresies-subtitle3")}
             </CardDescription>
           </Card>

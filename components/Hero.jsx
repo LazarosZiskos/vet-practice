@@ -71,6 +71,7 @@ const Hero = () => {
               description={t("prolipsi-desc")}
               style="bg-gray2"
               icon={<BriefcaseMedical size={40} className="text-blue1" />}
+              descStyle="text-[#595959]"
             />
             <MyCard
               title={t("diagnosi")}

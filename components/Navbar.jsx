@@ -68,7 +68,7 @@ const Navbar = () => {
                     className={`font-semibold transition-all ease-in-out duration-100 hover:text-blue1 ${
                       pathname === link.href ? "text-blue1" : ""
                     }`}
-                    aria-label={link.title}
+                    aria-label={link.desc}
                   >
                     {t(link.title)}
                   </Link>

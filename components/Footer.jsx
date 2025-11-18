@@ -30,7 +30,7 @@ const Footer = () => {
               sizes="150px"
             />
           </Link>
-          <p className="text-gray2/60 text-sm max-w-[350px] text-center">
+          <p className="text-gray2/80 text-sm max-w-[350px] text-center">
             {t("footer-subheader1")}
             <br />
             {t("footer-subheader2")}
@@ -123,12 +123,12 @@ const Footer = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <hr className="mt-5 mb-5 w-[80%] lg:w-[65%]" />
-        <div className="text-center text-gray2/70 text-xs lg:text-sm">
+        <div className="text-center text-gray2/80 text-xs lg:text-sm">
           © Copyright Lina Akiadou 2025. All rights reserved.
           <br />
           Designed and developed by{" "}
           <Link
-            className="text-blue1 pt-2"
+            className="text-blue1 pt-2 font-bold"
             href="https://lazaros-portfolio.vercel.app/"
             target="blank"
             aria-label="Επιστεφτείται το Portfolio Website του δημιουργού"
