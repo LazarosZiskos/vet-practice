@@ -34,7 +34,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "el_GR",
-    url: "https://www.ktνηιατρειο-karvali.gr",
+    url: "https://www.ktiniatreio-karvali.gr",
     title: "Κτηνίατρος Νέα Καρβάλη, Καβάλα – Λίνα Ακακιάδου",
     description:
       "Κτηνιατρείο ζώων συντροφιάς στη Νέα Καρβάλη. Εξυπηρετούμε όλη την Καβάλα.",
@@ -58,9 +58,12 @@ export const metadata = {
       maxVideoPreview: -1,
     },
   },
-  icons: { icon: "/icon.ico" },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
-
 
 async function Layout({ children, params: { locale } }) {
   // Fetch translations for the current locale
