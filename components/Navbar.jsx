@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
         <div className="md:hidden">
           <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
-            <SheetTrigger>
+            <SheetTrigger aria-label="Άνοιγμα μενού πλοήγησης">
               <MenuIcon />
             </SheetTrigger>
             <SheetContent className="flex flex-col items-center justify-center w-[300px]">
