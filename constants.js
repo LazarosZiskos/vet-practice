@@ -11,18 +11,24 @@ export const navLinks = [
   {
     title: "nav.home", // Translation key
     href: "/",
+    desc: ""
   },
   {
     title: "nav.about",
     href: "/about",
+    desc: "Μάθετε περισσότερα για το κτηνιατρείο"
   },
   {
     title: "nav.services",
     href: "/services",
+    desc: "Δείτε όλες τις υπηρεσίες"
+
   },
   {
     title: "nav.contact",
     href: "/contact",
+    desc: "Επικοινωνήστε μαζί μας"
+
   },
 ];
 
@@ -159,6 +165,7 @@ export const services = [
     para5Key: "services.service1.para5",
     icon: <FaUserDoctor size={100} />,
     href: "/el/preventive-care",
+    ariaLabel: "Μετάβαση στην υπηρεσία Προληπτική φροντίδα"
   },
   {
     id: "lab-tests",
@@ -172,6 +179,7 @@ export const services = [
     para5Key: "services.service2.para5",
     icon: <FaMicroscope size={100} />,
     href: "/el/lab-tests",
+    ariaLabel: "Μετάβαση στην υπηρεσία Εργαστηριακές εξετάσεις"
   },
   {
     id: "surgery",
@@ -184,6 +192,7 @@ export const services = [
     para4Key: "",
     icon: <GiScalpel size={100} />,
     href: "/el/surgery",
+    ariaLabel: "Μετάβαση στην υπηρεσία Χειρουργείο"
   },
   {
     id: "dental-care",
@@ -196,6 +205,7 @@ export const services = [
     para4Key: "services.service4.para4",
     icon: <TbDental size={100} />,
     href: "/el/dental-care",
+    ariaLabel: "Μετάβαση στην υπηρεσία Οδοντιατρική φροντίδα"
   },
   {
     id: "pharmacy",
@@ -207,6 +217,7 @@ export const services = [
     para4Key: "services.service5.para4",
     icon: <CiMedicalCross size={100} />,
     href: "/el/pharmacy",
+    ariaLabel: "Μετάβαση στην υπηρεσία Φαρμακείο"
   },
   {
     id: "pathological-cases",
@@ -219,6 +230,7 @@ export const services = [
     para4Key: "services.service6.para4",
     icon: <FaStethoscope size={100} />,
     href: "/el/pathological-cases",
+    ariaLabel: "Μετάβαση στην υπηρεσία Παθολογικά περιστατικά"
   },
   {
     id: "nutrition",
@@ -230,6 +242,7 @@ export const services = [
     para4Key: "services.service7.para4",
     icon: <PiBone size={100} />,
     href: "/el/nutrition",
+    ariaLabel: "Μετάβαση στην υπηρεσία Διατροφή"
   },
   {
     id: "client-records",
@@ -241,6 +254,7 @@ export const services = [
     para4Key: "services.service8.para4",
     icon: <PiBone size={100} />,
     href: "/el/client-records",
+    ariaLabel: "Μετάβαση στην υπηρεσία Ιστορικό πελατών"
   },
   {
     id: "travel",
@@ -252,8 +266,11 @@ export const services = [
     para4Key: "services.service9.para4",
     icon: <FaPassport size={100} />,
     href: "/el/travel",
-  },
+    ariaLabel: "Μετάβαση στην υπηρεσία Ταξιδιωτικά έγγραφα"
+  }
 ];
+
+
 
 export const detailServices = [
   {

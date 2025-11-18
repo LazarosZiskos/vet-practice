@@ -79,6 +79,7 @@ const Services = () => {
               icon={service.icon}
               id={service.id}
               href={`/${locale}/services/${service.id}`}
+              aria-label={service.ariaLabel}
             />
           ))}
         </div>
