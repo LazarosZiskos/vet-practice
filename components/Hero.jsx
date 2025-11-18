@@ -32,7 +32,6 @@ const Hero = () => {
           priority
           width={1920}
           height={722}
-
         />
         {/* <div className="bg-black/40 absolute top-[157px] w-full h-[64.4vh]" /> */}
         <div className="absolute justify-center items-center flex flex-col top-[120px] w-full h-[70vh]">
@@ -49,7 +48,7 @@ const Hero = () => {
             <div className="flex">
               <MyButton
                 title={t("perissotera")}
-                style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-blue1 mr-5"
+                style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-white hover:border-white mr-5"
                 href="/about"
               />
               <MyButton
@@ -70,7 +69,7 @@ const Hero = () => {
             <MyCard
               title={t("prolipsi")}
               description={t("prolipsi-desc")}
-              style="bg-gray2 "
+              style="bg-gray2"
               icon={<BriefcaseMedical size={40} className="text-blue1" />}
             />
             <MyCard

@@ -41,7 +41,7 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        blue1: "#2FA3B5",
+        blue1: "#247A8A",
         gray1: "#2F2F2F",
         gray2: "#F2F2F2",
         primary: {
