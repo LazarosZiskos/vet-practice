@@ -45,7 +45,7 @@ const Hero = () => {
             <p className="text-white pb-4 font-semibold text-sm md:text-xl md:pb-10">
               {t("subheader")}
             </p>
-            <div className="flex">
+            <div className="flex xl:mb-[150px]">
               <MyButton
                 title={t("perissotera")}
                 style="text-white bg-blue1 border border-blue1 hover:bg-transparent hover:text-white hover:border-white mr-5"
